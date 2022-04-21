@@ -17,6 +17,29 @@ $(function () {
         infinite: false,
     })
 
+    $('.contacts-tabs__slider').slick({
+        arrows: true,
+        dots: true,
+        prevArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--prev"><svg class="main-slider__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
+        nextArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--next"><svg class="main-slider__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
+        infinite: false,
+    })
+
+    //Табы
+
+    $('.contacts-tabs__link').on('click', function (e) {
+        e.preventDefault();
+        $('.contacts-tabs__link').removeClass('contacts-tabs__link--active');
+        $(this).addClass('contacts-tabs__link--active');
+
+        $('.contacts-tabs__content').removeClass('contacts-tabs__content--active');
+        $($(this).attr('href')).addClass('contacts-tabs__content--active');
+    });
+
+    $('.contacts-tabs__link').on('click', function () {
+        $('.contacts__content').addClass('contacts__content--active');
+    })
+
     //Счетчик
     const number = document.querySelectorAll('.about-numbers__number');
     number.forEach(item => {

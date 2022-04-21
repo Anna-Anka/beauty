@@ -58,7 +58,6 @@
 
 .form {
     width: 100%;
-    // max-width: 500px;
 
     &__item {
         &:not(:last-child) {
@@ -68,6 +67,10 @@
         &--message {
             margin-bottom: 24px;
         }
+    }
+
+    &__title {
+        margin-bottom: 35px;
     }
     
     &__btn {
