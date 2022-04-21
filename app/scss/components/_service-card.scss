@@ -1,0 +1,52 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px 25px;
+    background-color: $light-100;
+    box-shadow: 6px 5px 16px rgba($blue-100, 0.83);
+    
+    &__img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        border: 2px solid $blue-800;
+        border-radius: 50%;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: $fw-500;
+        font-size: 19px;
+    }
+
+    &__text {
+        position: relative;
+        padding-left: 5px;
+        margin-bottom: 15px;
+
+        &::before {
+            position: absolute;
+            left: -5px;
+            width: 2px;
+            height: 100%;
+            background-color: $blue-100;
+            content: "";
+        }
+        
+        p {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: auto;
+    }
+
+    &__icon {
+    }
+}

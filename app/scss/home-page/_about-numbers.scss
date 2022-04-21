@@ -1,0 +1,50 @@
+.about-numbers {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($blue-100, 0.65);
+        content: "";
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0 94px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 76px;
+
+        &:not(:last-child) {
+            &::before {
+                position: absolute;
+                right: -76px;
+                width: 2px;
+                height: 100%;
+                background-color: $blue-800;
+                content: "";
+            }
+        }
+    }
+
+    &__number {
+        margin-bottom: 10px;
+        font-weight: $fw-500;
+        font-size: 40px;
+    }
+
+    &__text {
+        font-size: 19px;
+    }
+}

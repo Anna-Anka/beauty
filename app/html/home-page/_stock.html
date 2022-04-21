@@ -1,0 +1,70 @@
+<section class="stock section">
+    <div class="container">
+        <h2 class="title">
+            Акции
+        </h2>
+
+        <ul class="stock__items">
+            <li class="stock__item">
+                @include("../components/_stock-card.html", {
+                "view" : "normal",
+                "salary-number" : "5",
+                "img-name" : "family",
+                "img-alt" : "Семейная скидка",
+                "title" : "Семейная скидка",
+                "text" : "<p>Если Ваш родственник лечится в клинике “BEAUTY DENT”, то вы получаете скидку -5% на все услуги стоматологии.</p>"
+                })
+            </li>
+            <li class="stock__item stock__item--vertical">
+                @include("../components/_stock-card.html", {
+                "view" : "horizontal",
+                "salary-number" : "4",
+                "img-name" : "children",
+                "img-alt" : "Детям до 16 лет",
+                "title" : "Детям до 16 лет",
+                "text" : "<p>Если Ваш родственник лечится в клинике “BEAUTY DENT”, то вы получаете скидку -5% на все услуги стоматологии.</p>"
+                })
+            </li>
+            <li class="stock__item">
+                @include("../components/_stock-card.html", {
+                "view" : "reverse",
+                "salary-number" : "100",
+                "img-name" : "first",
+                "img-alt" : "Первая консультация",
+                "title" : "Первая консультация",
+                "text" : "<p>Первая консультация у любого врача в наших клиниках совершенно бесплатно.</p>"
+                })
+            </li>
+            <li class="stock__item">
+                @include("../components/_stock-card.html", {
+                "view" : "reverse",
+                "salary-number" : "7",
+                "img-name" : "card",
+                "img-alt" : "По социальным картам",
+                "title" : "По социальным картам",
+                "text" : "<p>По социальным картам наши клиенты получают скидку -7% на все услуги стоматологии.</p>"
+                })
+            </li>
+            <li class="stock__item stock__item--vertical">
+                @include("../components/_stock-card.html", {
+                "view" : "horizontal",
+                "salary-number" : "6",
+                "img-name" : "birthday",
+                "img-alt" : "В честь дня рождения",
+                "title" : "В честь дня рождения",
+                "text" : "<p>В честь дня рождения наши клиенты получают скидку -6%. Предложение действует 10 дней до и после праздника.</p>"
+                })
+            </li>
+            <li class="stock__item">
+                @include("../components/_stock-card.html", {
+                "view" : "normal",
+                "salary-number" : "3",
+                "img-name" : "visited",
+                "img-alt" : "Посетителям сайта",
+                "title" : "Посетителям сайта",
+                "text" : "<p>Посетители сайта получают скидку -3% по промокоду “Beauty.www” на все услуги наших стоматологий в Москве.</p>"
+                })
+            </li>
+        </ul>
+    </div>
+</section>

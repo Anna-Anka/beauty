@@ -1,0 +1,66 @@
+.stock-card {
+    display: flex;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &--horizontal {
+        display: inline-grid;
+        height: 100%;
+
+        .stock-card__picture,
+        .stock-card__content {
+            height: 215px;
+        }
+
+        .stock-card__img {
+            height: 100%;
+        }
+    }
+
+    &__picture,
+    &__img {
+        max-width: 380px;
+    }
+
+    &__picture {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__salary {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px 10px;
+        color: $white;
+        font-weight: $fw-500;
+        font-size: 25px;
+        background-color: $purple-800;
+        box-shadow: -5px 4px 11px rgba($purple-800, 0.47);
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 380px;
+        padding: 15px;
+        background-image: linear-gradient(105.22deg, rgba(255, 255, 255, 0.24) -2.73%, rgba(131, 163, 231, 0.23) 121.01%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        text-align: left;
+    }
+}

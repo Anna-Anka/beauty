@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'vars';
+@import 'reset';
+
+/* @import 'mixins';*/
+@import 'libs';
+@import 'global';
+
+//Components
+@import 'components/header';
+@import 'components/banner-form';
+@import 'components/service-card';
+@import 'components/stock-card';
+@import 'components/contacts';
+@import 'components/footer';
+
+//Home page
+@import 'home-page/main-slider';
+@import 'home-page/services';
+@import 'home-page/advantages';
+@import 'home-page/about-numbers';
+@import 'home-page/stock';
+

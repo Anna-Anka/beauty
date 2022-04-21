@@ -1,0 +1,49 @@
+.contacts {
+    text-align: center;
+    background-color: $white;
+
+    &__content {
+        display: flex;
+
+    }
+
+    &__chart {
+        margin-right: 26px;
+        position: relative;
+    }
+
+    &__descr,
+    &__name {
+        display: inline-block;
+    }
+
+    &__name {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $light-200;
+        padding: 15px;
+        max-width: 270px;
+        text-align: left;
+    }
+
+    &__link {
+        color: $purple-800;
+    }
+
+    &__chart,
+    &__map {
+        width: 100%;
+    }
+
+    &__map {
+        max-width: 675px;
+        height: 370px;
+    }
+}

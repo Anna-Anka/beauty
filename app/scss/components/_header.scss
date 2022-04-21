@@ -1,0 +1,169 @@
+.header {
+    background-color: $light-100;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    &__logo,
+    &__inner {
+        margin-right: 10px;
+    }
+
+    &__items {
+        max-width: 535px;
+    }
+
+    &__item {
+        max-width: 210px;
+        text-align: center;
+    }
+
+    &__address {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__phone,
+    &__link {
+        color: $purple-800;
+        font-weight: $fw-500;
+    }
+
+    &__phone,
+    &__link,
+    &__address {
+        transition: color 0.4s, box-shadow 0.4s;
+
+        &:focus {
+            color: $purple-800;
+            box-shadow: 0 0 0 1px $blue-800;
+        }
+
+        &:hover {
+            color: $blue-800;
+        }
+
+        &:active {
+            color: rgba($purple-800, 0.75);
+        }
+    }
+
+    &__contacts {
+        max-width: 250px;
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &__navigation {
+        background-color: $blue-800;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 20px;
+        transition: fill 0.4s;
+        fill: $blue-100;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 0;
+        background-color: transparent;
+        border: 1px solid transparent;
+        transform: translateY(-50%);
+        transition: border-color 0.4s,
+        background-color 0.4s;
+
+        &:focus {
+            fill: $white;
+            stroke: $blue-800;
+        }
+
+        &:hover {
+            .header__icon {
+                fill: $blue-800;
+            }
+        }
+
+        &:active {
+            .header__icon {
+                fill: $purple-800;
+            }
+        }
+
+        &--prev {
+            left: -40px;
+        }
+
+        &--next {
+            right: -40px;
+        }
+    }
+    
+    .slick-disabled {
+        cursor: initial;
+
+        .header__icon {
+            fill: $light-200;
+        }
+
+        &:focus,
+        &:hover,
+        &:active {
+            .header__icon {
+                fill: $light-200;
+            }
+        }
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 9px 10px;
+        color: $light-100;
+        font-weight: $fw-500;
+        background-color: $blue-800;
+        border: 1px solid transparent;
+        transition: background-color 0.5s, color 0.3s;
+
+        &:focus {
+            color: $blue-800;
+            border-color: $blue-800;
+        }
+
+        &:hover {
+            color: $blue-800;
+        }
+
+        &:active {
+            color: $purple-800;
+        }
+
+        &:focus,
+        &:hover,
+        &:active {
+            background-color: $light-100;
+        }
+    }
+}

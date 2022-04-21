@@ -1,0 +1,11 @@
+.breadcrums {
+    background-color: $blue-800;
+    color: $white;
+    padding: 15px 0;
+
+    &__item {
+        &:not(:last-child) {
+            
+        }
+    }
+}

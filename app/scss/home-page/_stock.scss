@@ -1,0 +1,23 @@
+.stock {
+    text-align: center;
+
+    &__items {
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: repeat(3, 360px);
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    &__item {
+        display: inline-block;
+        text-align: left;
+        grid-column: span 2;
+
+        &--vertical {
+            grid-row: span 2;
+            grid-column: span 1;
+            max-width: 380px;
+        }
+    }
+}

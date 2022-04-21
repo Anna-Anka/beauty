@@ -1,0 +1,32 @@
+<section class="banner-form">
+        <div class="banner-form__content">
+            <div class="banner-form__text">
+                <h2 class="banner-form__title">@title</h2>
+                <div class="banner-form__subtitle">
+                    <p>@text</p>
+                </div>
+            </div>
+
+            <form class="banner-form__form form">
+                <div class="banner-form__item">
+                    <label class="sr-only" for="banner-form__name-name">
+                        Введите ваше имя
+                    </label>
+                    <input class="banner-form__field form__field" type="text" id="banner-form__name-name" name="banner-form__name" placeholder="Ваше имя" required>
+                </div>
+                <div class="banner-form__item">
+                    <label class="sr-only" for="banner-form__name-tel">
+                        Введите ваш номер телефона
+                    </label>
+                    <input class="banner-form__field form__field" type="tel" id="banner-form__name-tel" name="banner-form__tel" placeholder="Ваш номер телефона" required>
+                </div>
+                <button class="banner-form__btn button button--normal" type="submit">
+                    @btn
+                    <svg class="button__icon">
+                        <use xlink:href="img/sprite.svg#@icon-icon">
+                    </svg>
+                </button>
+            </form>
+        </div>
+</section>
+

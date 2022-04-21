@@ -1,0 +1,77 @@
+<section class="main-slider">
+    <h2 class="sr-only">
+        Лучшие стоматологии Москвы
+    </h2>
+    <ul class="main-slider__items">
+        <li class="main-slider__item" style="background-image: url('img/main-slider/1.jpg');">
+            <div class="container">
+                <div class="main-slider__content">
+                    <h3 class="main-slider__title title">
+                        Стоматологии в Москве
+                    </h3>
+                    <div class="main-slider__text">
+                        <p>
+                            Безопасная стоматологическая помощь в полном объеме по всем специализациям для детей и
+                            взрослых!
+                        </p>
+                    </div>
+                    <button class="main-slider__btn button button--normal" type="button">
+                        Запись на прием
+                        <svg class="button__icon">
+                            <use xlink:href="img/sprite.svg#sign-icon">
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </li>
+        <li class="main-slider__item" style="background-image: url('img/main-slider/2.jpg');">
+            <div class="container">
+                <div class="main-slider__content">
+                    <h3 class="main-slider__title title">
+                        Первая консультация — бесплатно
+                    </h3>
+                    <div class="main-slider__text">
+                        <p>
+                            В наших клиниках постоянно проходят акции, Вы можете ознакомиться с ними на сайте
+                        </p>
+                    </div>
+                    <button class="main-slider__btn button button--normal" type="button">
+                        Подробнее
+                        <svg class="button__icon">
+                            <use xlink:href="img/sprite.svg#next-icon">
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </li>
+        <li class="main-slider__item" style="background-image: url('img/main-slider/3.jpg');">
+            <div class="container">
+                <div class="main-slider__content">
+                    <h3 class="main-slider__title title">
+                        Детское отделение
+                    </h3>
+                    <div class="main-slider__text">
+                        <p>
+                            В Beauty Dent открыто детское отделение. Нынешнему поколению очень повезло, диагностика,
+                            лечение безболезненны, безопасны и эффективны. Но нужно помнить, что лучше предупредить, чем
+                            лечить.
+                        </p>
+                    </div>
+                    <button class="main-slider__btn button button--normal" type="button">
+                        Подробнее
+                        <svg class="button__icon">
+                            <use xlink:href="img/sprite.svg#next-icon">
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+@include('../components/_banner-form.html', {
+    "title" : "Заказать звонок",
+    "text" : "Заполните форму и мы перезвоним",
+    "btn" : "Заказать звонок",
+    "icon" : "phone"
+})

@@ -1,0 +1,15 @@
+.services {
+    text-align: center;
+
+    &__items {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(279px, 1fr));
+        gap: 28px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+}
