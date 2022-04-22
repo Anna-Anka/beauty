@@ -1,5 +1,28 @@
 <section class="blockquote" style="background-image:url('img/about/blockquote.jpg')">
-    <div class="container">
-
-    </div>
+        <div class="blockquote__container">
+            <img class="blockquote__img" src="img/about/author.jpg" alt="Борисов Михаил Петрович" width="340" height="266">
+            <blockquote class="blockquote__content">
+                <h3 class="blockquote__title subtitle">
+                    Здоровые зубы - красивая улыбка
+                </h3>
+                <div class="blockquote__text">
+                    <p>
+                        BEAUTY DENT - сеть стоматологических клиник высокого уровня в Москве, которые специализируются на диагностике и лечение стоматологических проблем.
+                    </p>
+                    <p>
+                        Специалисты наших стоматологий готовы оказать любую стоматологическую помощь, они проведут комплексное обселодвание и лечение зубов и полости рта.
+                    </p>
+                </div>
+                <cite class="blockquote__author">
+                    Борисов Михаил Петрович - создатель “BEUTY DENT”
+                </cite>
+            </blockquote>
+        </div>
 </section>
+
+@include('../components/_banner-form.html', {
+"title" : "Заказать звонок",
+"text" : "Заполните форму и мы перезвоним",
+"btn" : "Заказать звонок",
+"icon" : "phone"
+})

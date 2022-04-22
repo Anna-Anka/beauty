@@ -1,0 +1,22 @@
+.technology {
+    text-align: center;
+
+    &__items {
+        text-align: left;
+    }
+
+    &__title {
+        font-size: 19px;
+        line-height: 1;
+        font-weight: $fw-500;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        p {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
