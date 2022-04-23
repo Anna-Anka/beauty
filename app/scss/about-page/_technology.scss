@@ -1,15 +1,110 @@
 .technology {
+    padding-bottom: 200px;
     text-align: center;
 
     &__items {
+        display: flex;
+        flex-wrap: wrap;
         text-align: left;
     }
 
+    &__item {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 598px;
+
+        &--lasers {
+            .technology__title {
+                &::before {
+                    background-image: url('../img/about/technology/lasers-line.svg');
+                    width: 368px;
+                    height: 96px;
+                }
+            }
+        }
+
+        &--diagnostics {
+            .technology__title {
+                &::before {
+                    background-image: url('../img/about/technology/diagnostics-line.svg');
+                }
+            }
+        }
+
+        &--microscope {
+            .technology__title {
+                &::before {
+                    background-image: url('../img/about/technology/microscope-line.svg');
+                }
+            }
+        }
+
+        &--cameras {
+            .technology__title {
+                &::before {
+                    background-image: url('../img/about/technology/cameras-line.svg');
+                }
+            }
+        }
+
+        &--microscope,
+        &--cameras {
+            flex-direction: row-reverse;
+
+            .technology__img {
+                margin-right: auto;
+                margin-left: 0;
+                
+            }
+
+            .technology__content {
+                right: 0;
+                left: initial;
+                margin-right: 0;
+            }
+
+            .technology__title {
+                &::before {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        max-width: 300px;
+        margin-right: 18px;
+
+        &--diagnostics {
+            top: 109px;
+        }
+
+        &--cameras {
+            top: 44px;
+        }
+    }
+
     &__title {
+        margin-bottom: 20px;
+        font-weight: $fw-500;
         font-size: 19px;
         line-height: 1;
-        font-weight: $fw-500;
-        margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            top: 28px;
+        }
     }
 
     &__text {
@@ -18,5 +113,12 @@
                 margin-bottom: 10px;
             }
         }
+    }
+
+    &__img {
+        max-width: 280px;
+        height: 300px; 
+        margin-left: auto;
+        object-fit: cover;
     }
 }
