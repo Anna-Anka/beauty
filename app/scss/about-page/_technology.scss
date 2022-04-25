@@ -17,9 +17,9 @@
         &--lasers {
             .technology__title {
                 &::before {
-                    background-image: url('../img/about/technology/lasers-line.svg');
                     width: 368px;
                     height: 96px;
+                    background-image: url('../img/about/technology/lasers-line.svg');
                 }
             }
         }
@@ -27,6 +27,8 @@
         &--diagnostics {
             .technology__title {
                 &::before {
+                    width: 440px;
+                    height: 2px;
                     background-image: url('../img/about/technology/diagnostics-line.svg');
                 }
             }
@@ -35,6 +37,8 @@
         &--microscope {
             .technology__title {
                 &::before {
+                    width: 424px;
+                    height: 143px;
                     background-image: url('../img/about/technology/microscope-line.svg');
                 }
             }
@@ -43,8 +47,31 @@
         &--cameras {
             .technology__title {
                 &::before {
+                    width: 473px;
+                    height: 107px;
                     background-image: url('../img/about/technology/cameras-line.svg');
                 }
+            }
+        }
+
+        &--lasers,
+        &--microscope {
+            .technology__img {
+                border-bottom: 2.5px solid $blue-100;
+            }
+        }
+
+        &--diagnostics,
+        &--cameras {
+            .technology__img {
+                border-top: 2.5px solid $blue-100;
+            }
+        }
+
+        &--lasers,
+        &--diagnostics {
+            .technology__img {
+                border-right: 2.5px solid $blue-100;
             }
         }
 
@@ -55,7 +82,7 @@
             .technology__img {
                 margin-right: auto;
                 margin-left: 0;
-                
+                border-left: 2.5px solid $blue-100;
             }
 
             .technology__content {
@@ -66,7 +93,8 @@
 
             .technology__title {
                 &::before {
-                    right: 0;
+                    right: 12px;
+                    left: initial;
                 }
             }
         }
@@ -89,21 +117,21 @@
     }
 
     &__title {
+        position: relative;
         margin-bottom: 20px;
         font-weight: $fw-500;
         font-size: 19px;
         line-height: 1;
-        position: relative;
 
         &::before {
             position: absolute;
-            content: "";
-            left: 0;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
             top: 28px;
+            left: 0;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            content: "";
         }
     }
 
