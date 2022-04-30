@@ -1,0 +1,49 @@
+.item-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 43px;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid $blue-800;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        top: 23px;
+        bottom: 0;
+        left: 9px;
+        width: 2px;
+        background-color: $blue-800;
+    }
+
+    &__title {
+        max-width: 180px;
+        margin-right: 10px;
+        font-weight: $fw-500;
+        font-size: 19px;
+        line-height: 1;
+    }
+
+    &__text {
+        max-width: 400px;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.offer {
+    background-color: $white;
+    position: relative;
+
+
+    &__wrapper {
+        // display: flex;
+        // justify-content: space-between;
+        max-width: 1570px;
+        padding-right: 10px;
+        // min-height: 422px;
+    }
+
+    &__bg {
+        @include background;
+        width: 100%;
+        max-width: 876px;
+        height: 553px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    &__content {
+        max-width: 645px;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    &__items {
+        text-align: left;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &:last-child {
+            .item-card {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .item-card {
+                &::before {
+                    background-color: $blue-100;
+                }
+            }
+        }
+    }
+}

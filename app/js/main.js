@@ -20,9 +20,19 @@ $(function () {
     $('.contacts-tabs__slider').slick({
         arrows: true,
         dots: true,
-        prevArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--prev"><svg class="main-slider__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
-        nextArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--next"><svg class="main-slider__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
+        prevArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--prev"><svg class="contacts-tabs__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
+        nextArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--next"><svg class="contacts-tabs__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
         infinite: false,
+    })
+
+    $('.awards__items').slick({
+        arrows: true,
+        dots: true,
+        prevArrow: '<button class="awards__arrow awards__arrow--prev"><svg class="awards__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
+        nextArrow: '<button class="awards__arrow awards__arrow--next"><svg class="awards__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
     })
 
     //Табы
@@ -60,6 +70,11 @@ $(function () {
             }
         });
 
+    });
+
+    //Fancybox
+    $('.awards__link').fancybox({
+        width = "340%"
     });
 
 

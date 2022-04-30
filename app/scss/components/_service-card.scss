@@ -24,8 +24,8 @@
 
     &__text {
         position: relative;
-        padding-left: 5px;
         margin-bottom: 15px;
+        padding-left: 5px;
 
         &::before {
             position: absolute;
@@ -45,8 +45,5 @@
 
     &__btn {
         margin-top: auto;
-    }
-
-    &__icon {
     }
 }

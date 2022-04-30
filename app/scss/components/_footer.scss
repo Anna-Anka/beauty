@@ -1,7 +1,7 @@
 .footer {
     &__top {
-        background-color: $light-100;
         padding: 40px 0;
+        background-color: $light-100;
     }
 
     &__wrapper,
@@ -36,8 +36,8 @@
     }
 
     &__items {
-        max-width: 224px;
         width: 100%;
+        max-width: 224px;
 
         &:not(:last-child) {
             margin-right: 30px;
@@ -49,14 +49,14 @@
     }
 
     &__link {
+        display: block;
         padding: 10px;
         border: 1px solid transparent;
-        display: block;
         transition: background-color 0.3s, color 0.3s;
 
         &:focus {
-            background-color: $white;
             color: $blue-800;
+            background-color: $white;
             border-color: $blue-800
         }
 
@@ -65,19 +65,19 @@
         }
 
         &:active {
-            background-color: $blue-800;
             color: $white;
+            background-color: $blue-800;
         }
     }
 
     &__bottom {
-        background-color: $blue-800;
         padding: 15px 0;
+        background-color: $blue-800;
     }
 
     &__content {
         display: flex;
-        color: $white;
         justify-content: space-between;
+        color: $white;
     }
 }

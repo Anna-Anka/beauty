@@ -1,0 +1,114 @@
+@mixin background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+//Слайдер 
+@mixin dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+
+    .slick-active {
+        button {
+            background-color: $blue-800;
+            cursor: initial;
+
+            &:focus {
+                border-color: transparent;
+            }
+
+            &:hover,
+            &:active {
+                background-color: $blue-800;
+            }
+        }
+    }
+
+    li {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    button {
+        width: 30px;
+        height: 5px;
+        font-size: 0;
+        background-color: $light-100;
+        border: 1px solid transparent;
+        transition: border-color 0.4s, background-color 0.4s;
+
+        &:focus {
+            border-color: $blue-800;
+        }
+
+        &:hover {
+            background-color: $blue-100;
+        }
+
+        &:active {
+            background-color: rgba($purple-800, 0.75);
+        }
+    }
+}
+
+@mixin slick-disabled {
+    background-color: rgba($dark-600, 0.4);
+    cursor: initial;
+
+    &:focus,
+    &:active {
+        border-color: transparent;
+    }
+
+    &:hover {
+        background-color: rgba($dark-600, 0.4);
+
+        .main-slider__icon {
+            fill: $white;
+        }
+    }
+}
+
+@mixin arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 45px;
+    background-color: $blue-100;
+    transform: translateY(-50%);
+    transition: border-color 0.4s,
+    background-color 0.4s;
+
+    &:focus {
+        box-shadow: 0 0 0 1px $blue-800;
+    }
+
+    &:active {
+        box-shadow: 0 0 0 1px $purple-800;
+    }
+
+    &--next {
+        right: 279px;
+    }
+
+    &--prev {
+        left: 279px;
+    }
+}
+
+@mixin slick-icon {
+    width: 20px;
+    height: 25px;
+    transition: fill 0.4s;
+    fill: $light-100;
+}

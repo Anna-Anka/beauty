@@ -2,7 +2,7 @@
 @import 'vars';
 @import 'reset';
 
-/* @import 'mixins';*/
+@import 'mixins';
 @import 'libs';
 @import 'global';
 
@@ -12,6 +12,7 @@
 @import 'components/service-card';
 @import 'components/stock-card';
 @import 'components/contacts';
+@import 'components/item-card';
 @import 'components/footer';
 
 //Home page
@@ -24,3 +25,5 @@
 //About page
 @import 'about-page/blockquote';
 @import 'about-page/technology';
+@import 'about-page/offer';
+@import 'about-page/awards';

@@ -128,9 +128,7 @@
             top: 28px;
             left: 0;
             width: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            @include background;
             content: "";
         }
     }

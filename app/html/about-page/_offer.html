@@ -1,3 +1,37 @@
-<section class="offer">
-    .
+<section class="offer section">
+    <div class="offer__wrapper">
+        <div class="offer__bg" style="background-image: url('img/about/offer-bg.jpg');"></div>
+        <div class="offer__content">
+            <h2 class="title">
+                Мы предлагаем
+            </h2>
+            <ul class="offer__items">
+                <li class="offer__item">
+                    @include("../components/_item-card.html", {
+                    "title" : "Выбор",
+                    "text" : "<p>Наши врачи лишь предоставляют Вам всю необходимую информацию и честно говорят о преимуществах и недостатках каждого варианта лечения, но выбор всегда остается за Вами</p>"
+                    })
+                </li>
+                <li class="offer__item">
+                    @include("../components/_item-card.html", {
+                    "title" : "Легко добраться",
+                    "text" : "<p>Все наши клиники находятся в Москве, поэтому к нам удобно добраться на любом виде транспорта</p>"
+                    })
+                </li>
+                <li class="offer__item">
+                    @include("../components/_item-card.html", {
+                    "title" : "Рассрочка и акции",
+                    "text" : "<p>Бывают такие ситуации, когда ждать и оттягивать лечение нельзя, поэтому мы идем на встречу пациентам и восстанавливаем зубы в рассрочку. Кроме того, в нашим клиниках постоянно действуют акции для разных людей.</p>"
+                    })
+                </li>
+                <li class="offer__item">
+                    @include("../components/_item-card.html", {
+                    "title" : "Комфорт",
+                    "text" : "<p>Процедуры, вызывающие дискомфортные ощущения, проводятся под анестезией.</p>"
+                    })
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </section>

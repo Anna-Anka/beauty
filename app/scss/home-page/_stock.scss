@@ -11,8 +11,8 @@
 
     &__item {
         display: inline-block;
-        text-align: left;
         grid-column: span 2;
+        text-align: left;
 
         &--vertical {
             grid-row: span 2;
