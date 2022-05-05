@@ -6,14 +6,10 @@
     text-align: center;
 
     &::before {
-        position: absolute;
         top: 0;
         left: 0;
-        z-index: -2;
-        width: 100%;
-        height: 100%;
         background-color: rgba($blue-100, 0.65);
-        content: "";
+        @include overlay;
     }
 
     &__items {
@@ -24,6 +20,33 @@
     &__item {
         max-width: 100%;
         padding: 0 20px;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        border: 1px solid transparent;
+        transition: border-color 0.3s, opacity 0.3s;
+
+        &::before {
+            @include overlay;
+            z-index: 0;
+            transition: background-color 0.3s;
+        }
+
+        &:focus {
+            border-color: $purple-800;
+        }
+
+        &:hover {
+            &::before {
+                background-color: rgba($blue-100, 0.65);
+            }
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
     }
 
     &__img {

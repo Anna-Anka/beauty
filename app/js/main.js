@@ -50,6 +50,15 @@ $(function () {
         $('.contacts__content').addClass('contacts__content--active');
     })
 
+    $('.history__link').on('click', function (e) {
+        e.preventDefault();
+        $('.history__link').removeClass('history__link--active');
+        $(this).addClass('history__link--active');
+
+        $('.history__content').removeClass('history__content--active');
+        $($(this).attr('href')).addClass('history__content--active');
+    });
+
     //Счетчик
     const number = document.querySelectorAll('.about-numbers__number');
     number.forEach(item => {
@@ -72,7 +81,7 @@ $(function () {
 
     });
 
-    //Fancybox
+    Fancybox
     $('.awards__link').fancybox({
         width = "340%"
     });
