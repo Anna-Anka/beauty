@@ -1,0 +1,12 @@
+.installment-question {
+    text-align: center;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        list-style: none;
+        counter-reset: question-counter;
+    }
+}

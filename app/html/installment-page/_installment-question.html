@@ -1,0 +1,39 @@
+<section class="installment-question section">
+    <div class="container">
+        <h2 class="title">
+            Вопросы
+        </h2>
+        <ol class="installment-question__items">
+            <li class="question-card">
+                @include("../components/_question-card.html", {
+                "title" : "На какой период предоставляется рассрочка?",
+                "text" : "<p>Рассрочка дается исходя из стоимости и длительности лечения. Рассрочка дается исходя из стоимости и длительности лечения.</p>"
+                })
+            </li>
+            <li class="question-card">
+                @include("../components/_question-card.html", {
+                "title" : "Будут ли дополнительные платежи?",
+                "text" : "<p>Нет, их не может быть! После диагностики мы фиксируем согласованный план и стоимость лечения, цена вносится в лист рассрочки.</p>"
+                })
+            </li>
+            <li class="question-card">
+                @include("../components/_question-card.html", {
+                "title" : "Сколько нужно будет платить ежемесячно?",
+                "text" : "<p>Это звивисит от общей стоимости лечения. Как правило, чем дороже услуга,тем больше ежемясячный платеж.</p>"
+                })
+            </li>
+            <li class="question-card">
+                @include("../components/_question-card.html", {
+                "title" : "Через какой банк оформляется рассрочка?",
+                "text" : "<p>Мы оформляем рассрочку через нашего банка партнера - “Тинькофф”</p>"
+                })
+            </li>
+            <li class="question-card">
+                @include("../components/_question-card.html", {
+                "title" : "Одобрят ли рассрочку с плохой кредитной историей?",
+                "text" : "<p>Оформление рассрочки с плохой кредитной историей удается не все. Но мы всегда стараеся помочь нашим пациентам, потому что здоровье запускать нельзя.</p>"
+                })
+            </li>
+        </ol>
+    </div>
+</section>

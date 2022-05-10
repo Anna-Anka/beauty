@@ -1,0 +1,58 @@
+.question-card {
+
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    padding-left: 76px;
+    counter-increment: question-counter;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 76px;
+        height: 100%;
+        color: $dark-800;
+        font-weight: $fw-500;
+        font-size: 40px;
+        line-height: 1;
+        text-align: center;
+        background-color: $blue-100;
+        content: "0"counter(question-counter)"";
+    }
+
+    &:nth-child(n+10) {
+        &::before {
+            content: counter(question-counter);
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    &::marker {
+        height: 100%;
+        font-size: 20px;
+        background-color: $blue-100;
+    }
+
+    &__content {
+        padding: 20px;
+        background-color: $white;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-weight: $fw-500;
+        font-size: 19px;
+        line-height: 1;
+    }
+
+    &__text {
+        max-width: 600px;
+    }
+}

@@ -9,12 +9,15 @@
 //Components
 @import 'components/header';
 @import 'components/banner-form';
-@import 'components/service-card';
-@import 'components/stock-card';
 @import 'components/contacts';
-@import 'components/stages-card';
 @import 'components/comparison';
 @import 'components/footer';
+
+//Cards
+@import 'components/question-card';
+@import 'components/stages-card';
+@import 'components/service-card';
+@import 'components/stock-card';
 
 //Home page
 @import 'home-page/main-slider';
@@ -33,3 +36,4 @@
 //Installment page
 @import 'installment-page/treatment';
 @import 'installment-page/stages-registration';
+@import 'installment-page/installment-question';
