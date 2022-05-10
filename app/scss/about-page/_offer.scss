@@ -32,24 +32,6 @@
     }
 
     &__item {
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-
-        &:last-child {
-            .item-card {
-                &::after {
-                    display: none;
-                }
-            }
-        }
-
-        &:nth-child(even) {
-            .item-card {
-                &::before {
-                    background-color: $blue-100;
-                }
-            }
-        }
+        @include stages;
     }
 }

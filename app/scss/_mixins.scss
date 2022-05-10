@@ -12,6 +12,28 @@
     content: "";
 }
 
+@mixin stages {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &:last-child {
+        .stages-card {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        .stages-card {
+            &::before {
+                background-color: $blue-100;
+            }
+        }
+    }
+}
+
 //Слайдер 
 @mixin dots {
     position: absolute;
