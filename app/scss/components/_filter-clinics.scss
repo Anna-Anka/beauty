@@ -1,0 +1,39 @@
+.filter-clinics {
+    margin-bottom: 35px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        width: 100%;
+        text-align: left;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px 10px 8px;
+        @include link;
+
+        &:hover {
+            &::before {
+                filter: invert(7%) sepia(11%) saturate(1517%) hue-rotate(315deg) brightness(100%) contrast(81%);
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            width: 9px;
+            height: 14px;
+            background-image: url('../img/sprite.svg#arrow-right-icon');
+            transform: translateY(-50%);
+            filter: invert(99%) sepia(35%) saturate(2339%) hue-rotate(177deg) brightness(100%) contrast(96%);
+            content: "";
+            @include background;
+        }
+    }
+}

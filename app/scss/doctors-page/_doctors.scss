@@ -1,0 +1,21 @@
+.main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.doctors {
+    text-align: center;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 35px;
+        width: 100%;
+        max-width: 941px;
+    }
+
+    &__item {
+        box-shadow: 6px 5px 16px rgba($blue-100, 0.83);
+    }
+}

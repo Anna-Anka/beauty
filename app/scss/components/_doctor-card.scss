@@ -1,0 +1,33 @@
+.doctor-card {
+    background-color: $white;
+
+    &__content {
+        padding: 10px;
+    }
+    
+    &__img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    &__img,
+    &__speciality {
+        margin-bottom: 10px;
+    }
+
+    &__title,
+    &__link {
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        @include small-title;
+    }
+
+    &__link,
+    &__btn {
+        width: 100%;
+    }
+}

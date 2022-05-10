@@ -1,7 +1,7 @@
 @mixin background {
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 }
 
 @mixin overlay {
@@ -31,6 +31,33 @@
                 background-color: $blue-100;
             }
         }
+    }
+}
+
+@mixin small-title {
+    font-weight: $fw-500;
+    font-size: 19px;
+    line-height: 1;
+}
+
+@mixin link {
+    border: 1px solid transparent;
+    transition: background-color 0.3s,
+    color 0.3s;
+
+    &:focus {
+        color: $blue-800;
+        background-color: $white;
+        border-color: $blue-800
+    }
+
+    &:hover {
+        background-color: $blue-100;
+    }
+
+    &:active {
+        color: $white;
+        background-color: $blue-800;
     }
 }
 

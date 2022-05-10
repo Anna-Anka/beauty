@@ -1,0 +1,60 @@
+.filter-search {
+    width: 100%;
+    margin-bottom: 35px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__field {
+        width: 100%;
+        padding: 10px;
+        background-color: $white;
+
+        &::placeholder {
+            line-height: 1;
+            opacity: 0.75;
+            transition: opacity 0.3s;
+        }
+
+        &:hover {
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__btn {
+        position: relative;
+        width: 100%;
+        max-width: 39px;
+        height: auto;
+        padding-left: 2px;
+        background-color: $white;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+        }
+
+        &::after {
+            top: 1px;
+            bottom: 1px;
+            left: 0;
+            width: 1px;
+            background-color: $blue-100;
+        }
+
+        &::before {
+            @include background;
+            top: 50%;
+            left: 50%;
+            width: 17px;
+            height: 17px;
+            background-image: url('../img/sprite.svg#search-icon');
+            transform: translate(-50%, -50%);
+            filter: invert(99%) sepia(35%) saturate(2339%) hue-rotate(177deg) brightness(100%) contrast(96%);
+        }
+    }
+}

@@ -51,23 +51,7 @@
     &__link {
         display: block;
         padding: 10px;
-        border: 1px solid transparent;
-        transition: background-color 0.3s, color 0.3s;
-
-        &:focus {
-            color: $blue-800;
-            background-color: $white;
-            border-color: $blue-800
-        }
-
-        &:hover {
-            background-color: $blue-100;
-        }
-
-        &:active {
-            color: $white;
-            background-color: $blue-800;
-        }
+        @include link;
     }
 
     &__bottom {
