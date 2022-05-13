@@ -59,6 +59,15 @@ $(function () {
         $($(this).attr('href')).addClass('history__content--active');
     });
 
+    $('.doctor-biography__link').on('click', function (e) {
+        e.preventDefault();
+        $('.doctor-biography__link').removeClass('doctor-biography__link--active');
+        $(this).addClass('doctor-biography__link--active');
+
+        $('.doctor-biography__content').removeClass('doctor-biography__content--active');
+        $($(this).attr('href')).addClass('doctor-biography__content--active');
+    });
+
     //Счетчик
     const number = document.querySelectorAll('.about-numbers__number');
     number.forEach(item => {
@@ -81,10 +90,12 @@ $(function () {
 
     });
 
-    Fancybox
+    //Fancybox
     $('.awards__link').fancybox({
         width = "340%"
     });
 
-
+    $('.doctor - biography__certificate').fancybox({
+        width = "340%"
+    });
 });

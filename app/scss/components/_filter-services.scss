@@ -10,7 +10,7 @@
         justify-content: space-between;
         padding: 10px 8px;
         text-align: left;
-        @include link;
+        @include link-bg;
     }
 
     &__name {

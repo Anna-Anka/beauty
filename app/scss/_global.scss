@@ -139,6 +139,7 @@ body {
 .subtitle {
     font-weight: $fw-500;
     font-size: 25px;
+    margin-bottom: 30px;
 
     &::before {
         height: 10px;
@@ -164,5 +165,11 @@ body {
 }
 
 .section {
+    padding: 60px 0;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
     padding: 60px 0;
 }

@@ -36,20 +36,7 @@
     &__phone,
     &__link,
     &__address {
-        transition: color 0.4s, box-shadow 0.4s;
-
-        &:focus {
-            color: $purple-800;
-            box-shadow: 0 0 0 1px $blue-800;
-        }
-
-        &:hover {
-            color: $blue-800;
-        }
-
-        &:active {
-            color: rgba($purple-800, 0.75);
-        }
+        @include link;
     }
 
     &__contacts {

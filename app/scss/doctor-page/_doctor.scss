@@ -1,0 +1,165 @@
+.doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 787px;
+    text-align: center;
+}
+
+.doctor-info,
+.doctor-biography {
+    margin-bottom: 40px;
+}
+
+.doctor-info {
+    display: flex;
+    margin-left: auto;
+    text-align: left;
+
+    &__img {
+        max-width: 300px;
+        height: 260px;
+        margin-right: 15px;
+        object-fit: cover;
+    }
+
+    &__list {
+        max-width: 380px;
+        margin-bottom: 20px;
+    }
+
+    &__statistics {
+        font-weight: $fw-500;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__descr {
+        font-weight: $fw-400;
+    }
+
+    &__btns {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.doctor-biography {
+    max-width: 715px;
+    width: 100%;
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    &__nav,
+    &__content,
+    &__img,
+    &__list {
+        width: 100%;
+    }
+
+    &__nav {
+        max-width: 445px;
+        margin-right: 10px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        @include link;
+
+        &--active {
+            color: $blue-800;
+        }
+    }
+
+    &__text {
+        max-width: 400px;
+        margin-left: auto;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+        max-width: 170px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__list {
+        max-width: 170px;
+    }
+
+    &__img {
+        height: 220px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.doctor-reviews {
+    width: 100%;
+
+    &__slider {
+        text-align: left;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 25px 35px;
+        background-color: $white;
+        box-shadow: 6px 5px 16px rgba($blue-100, 0.83);
+        display: flex;
+    }
+
+    &__author {
+        max-width: 227px;
+        width: 100%;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background-color: $blue-100;
+            right: 0;
+        }
+    }
+
+    &__name {
+        font-weight: $fw-500;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        max-width: 480px;
+    }
+}
