@@ -1,4 +1,4 @@
-<div class="filter-services">
+<div class="filter-services filters__item">
     <h3 class="filter-services__title subtitle">
         Услуги
     </h3>
@@ -81,6 +81,68 @@
                 <span class="filter-services__number">
                     (2)
                 </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<form class="filter-search filters__item" action="#">
+    <label class="sr-only" for="filter-search">
+        Поиск
+    </label>
+    <div class="filter-search__content">
+        <input class="filter-search__field" type="search" id="filter-search" placeholder="Поиск" name="filter-search" required>
+        <button class="filter-search__btn" type="button">
+            <span class="sr-only">
+                Найти
+            </span>
+        </button>
+    </div>
+</form>
+
+<div class="filter-form filters__item">
+    <h3 class="filter-form__title subtitle">
+        Записаться
+    </h3>
+    <div class="filter-form__bg" style="background-image: url('img/form-bg.jpg')"></div>
+    <form class="filter-form__form form" action="#">
+        <label class="sr-only" for="filter-form__name">
+            Введите ваше имя
+        </label>
+        <input class="form__field" type="text" id="filter-form__name" placeholder="Ваше имя*" required>
+        <label class="sr-only" for="filter-form__tel">
+            Введите ваш номер телефона
+        </label>
+        <input class="form__field" type="tel" id="filter-form__tel" placeholder="Ваш номер телефона *" required>
+        <button class="filter-form__btn" type="submit">
+            Записаться на прием
+        </button>
+    </form>
+</div>
+
+<div class="filter-clinics filters__item">
+    <h3 class="filter-clinics__title subtitle">
+        Клиники
+    </h3>
+    <ul class="filter-clinics__items">
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Динамо Ленинградский проспект д. 33А
+            </a>
+        </li>
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Беговая Хорошевское шоссе, 22
+            </a>
+        </li>
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Киевская, Украинский бул., д. 6
+            </a>
+        </li>
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Марьино ул. Люблинская, д.161
             </a>
         </li>
     </ul>

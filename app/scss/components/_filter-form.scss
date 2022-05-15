@@ -1,0 +1,15 @@
+.filter-form {
+    background-color: $blue-100;
+    padding: 20px 5px;
+
+    &__bg {
+        @include background;
+        width: 100%;
+        height: 280px;
+        margin-bottom: 15px;
+    }
+
+    &__form {
+        
+    }
+}

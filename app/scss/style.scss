@@ -11,6 +11,7 @@
 @import 'components/banner-form';
 @import 'components/contacts';
 @import 'components/comparison';
+@import 'components/other';
 @import 'components/footer';
 
 //Cards
@@ -24,6 +25,8 @@
 @import 'components/filter-search';
 @import 'components/filter-clinics';
 @import 'components/filter-services';
+@import 'components/filter-form';
+
 
 //Home page
 @import 'home-page/main-slider';
@@ -49,4 +52,10 @@
 @import 'doctors-page/doctors-filters';
 
 //Doctor page
-@import 'doctor-page/doctor'
+@import 'doctor-page/doctor';
+@import 'doctor-page/biography';
+@import 'doctor-page/info';
+@import 'doctor-page/reviews';
+
+//Price page
+@import 'price-page/price'

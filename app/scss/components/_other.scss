@@ -1,0 +1,13 @@
+.other {
+    max-width: 941px;
+    margin-left: auto;
+    text-align: center;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 290px);
+        gap: 35px;
+        width: 100%;
+        text-align: left;
+    }
+}

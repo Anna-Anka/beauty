@@ -1,0 +1,20 @@
+@include("./components/_top.html", {
+"title" : "Beauty — стоматологическая клиника | Цены"
+})
+
+@include("./components/_header.html")
+<main class="main">
+    <h1 class="sr-only">
+        Beauty Dent — сеть стоматологических клиник в Москве
+    </h1>
+    <div class="container">
+        <div class="main-wrapper">
+            @include("./price-page/_price-filters.html")
+            <!-- @include("./price-page/_doctor.html") -->
+        </div>
+    </div>
+</main>
+
+@include("./components/_contacts.html")
+@include("./components/_footer.html")
+@include("./components/_bottom.html")
