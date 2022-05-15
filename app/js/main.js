@@ -35,6 +35,13 @@ $(function () {
         slidesToScroll: 5,
     })
 
+    $('.doctor-reviews__slider').slick({
+        arrows: true,
+        prevArrow: '<button class="doctor-reviews__arrow doctor-reviews__arrow--prev"><svg class="doctor-reviews__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
+        nextArrow: '<button class="doctor-reviews__arrow doctor-reviews__arrow--next"><svg class="doctor-reviews__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
+        // adaptiveHeight: true,
+    })
+
     //Табы
 
     $('.contacts-tabs__link').on('click', function (e) {

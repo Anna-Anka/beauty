@@ -53,8 +53,8 @@
 }
 
 .doctor-biography {
-    max-width: 715px;
     width: 100%;
+    max-width: 715px;
 
     &__tabs {
         display: flex;
@@ -126,40 +126,113 @@
     width: 100%;
 
     &__slider {
+        height: 270px;
         text-align: left;
+        background-color: $white;
+        box-shadow: 6px 5px 16px rgba($blue-100, 0.83);
+    }
+
+    &__slide {
+        padding: 0 11px;
     }
 
     &__content {
+        display: flex;
         width: 100%;
         padding: 25px 35px;
-        background-color: $white;
-        box-shadow: 6px 5px 16px rgba($blue-100, 0.83);
-        display: flex;
     }
 
     &__author {
-        max-width: 227px;
-        width: 100%;
         position: relative;
-        padding-left: 25px;
+        width: 100%;
+        max-width: 227px;
         margin-right: 10px;
+        padding-left: 50px;
 
         &::before {
-            content: "";
             position: absolute;
-            height: 100%;
-            width: 2px;
-            background-color: $blue-100;
-            right: 0;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            color: $white;
+            font-weight: $fw-500;
+            font-size: 28px;
+            font-style: normal;
+            line-height: 1;
+            background-color: $blue-800;
+            border-radius: 50%;
+            content: "M";
         }
     }
 
     &__name {
-        font-weight: $fw-500;
         margin-bottom: 13px;
+        font-weight: $fw-500;
+        font-style: normal;
     }
 
     &__text {
+        position: relative;
         max-width: 480px;
+        height: 230px;
+        padding-left: 10px;
+        overflow-y: auto;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $blue-100;
+            content: "";
+        }
+    }
+
+    &__arrow {
+        @include arrow;
+        top: initial;
+        bottom: 0;
+
+        &--next {
+            right: initial;
+            left: 136px;
+        }
+
+        &--prev {
+            left: initial;
+            left: 88px
+        }
+    }
+
+    &__icon {
+        @include slick-icon;
+    }
+
+    .slick-disabled {
+        @include slick-disabled;
+    }
+}
+
+.other {
+    max-width: 941px;
+    margin-left: auto;
+    text-align: center;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 290px);
+        gap: 35px;
+        width: 100%;
+        text-align: left;
     }
 }
