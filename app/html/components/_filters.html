@@ -1,3 +1,4 @@
+@if (context.services === "yes") {
 <div class="filter-services filters__item">
     <h3 class="filter-services__title subtitle">
         Услуги
@@ -85,7 +86,9 @@
         </li>
     </ul>
 </div>
+}
 
+@if (context.search === "yes") {
 <form class="filter-search filters__item" action="#">
     <label class="sr-only" for="filter-search">
         Поиск
@@ -99,27 +102,34 @@
         </button>
     </div>
 </form>
-
+}
+@if (context.form === "yes") {
 <div class="filter-form filters__item">
     <h3 class="filter-form__title subtitle">
         Записаться
     </h3>
     <div class="filter-form__bg" style="background-image: url('img/form-bg.jpg')"></div>
     <form class="filter-form__form form" action="#">
-        <label class="sr-only" for="filter-form__name">
-            Введите ваше имя
-        </label>
-        <input class="form__field" type="text" id="filter-form__name" placeholder="Ваше имя*" required>
-        <label class="sr-only" for="filter-form__tel">
-            Введите ваш номер телефона
-        </label>
-        <input class="form__field" type="tel" id="filter-form__tel" placeholder="Ваш номер телефона *" required>
+        <div class="form__item">
+            <label class="sr-only" for="filter-form__name">
+                Введите ваше имя
+            </label>
+            <input class="filter-form__field form__field" type="text" id="filter-form__name" placeholder="Ваше имя*" required>
+        </div>
+        <div class="form__item">
+            <label class="sr-only" for="filter-form__tel">
+                Введите ваш номер телефона
+            </label>
+            <input class="filter-form__field form__field" type="tel" id="filter-form__tel" placeholder="Ваш номер телефона *" required>
+        </div>
         <button class="filter-form__btn" type="submit">
             Записаться на прием
         </button>
     </form>
 </div>
+}
 
+@if (context.clinics === "yes") {
 <div class="filter-clinics filters__item">
     <h3 class="filter-clinics__title subtitle">
         Клиники
@@ -147,3 +157,4 @@
         </li>
     </ul>
 </div>
+}

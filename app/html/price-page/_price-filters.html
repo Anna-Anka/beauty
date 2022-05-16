@@ -2,8 +2,11 @@
     <h2 class="sr-only">
         Навигация по выбору специалиста
     </h2>
-    .
-    @include("../components/_filter-search.html")
-    @include("../components/_filter-services.html")
-    @include("../components/_filter-form.html")
+    <div class="filters">
+        @include("../components/_filters.html", {
+            "serch" : "yes",
+            "services" : "yes",
+            "form" : "yes"
+        })
+    </div>
 </section>

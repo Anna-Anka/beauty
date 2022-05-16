@@ -1,0 +1,46 @@
+.price-page {
+    max-width: 940px;
+    width: 100%;
+    text-align: center;
+}
+
+.price {
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        // max-width: 500px;
+        font-size: 19px;
+        line-height: 1;
+        font-weight: $fw-500;
+        background-color: $blue-100;
+        padding: 10px 0;
+        color: $blue-800;
+    }
+
+    &__items {
+        text-align: left;
+    }
+
+    &__item {
+        &:nth-child(even) {
+            background-color: $white;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 25px;
+    }
+
+    &__name {
+        max-width: 600px;
+        margin-right: 15px;
+    }
+
+    &__price {
+        font-weight: $fw-500;
+    }
+}

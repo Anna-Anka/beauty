@@ -145,21 +145,9 @@
     <h2 class="sr-only">
         Навигация по выбору специалиста
     </h2>
-    .
-    <form class="filter-search filters__item" action="#">
-    <label class="sr-only" for="filter-search">
-        Поиск
-    </label>
-    <div class="filter-search__content">
-        <input class="filter-search__field" type="search" id="filter-search" placeholder="Поиск" name="filter-search" required>
-        <button class="filter-search__btn" type="button">
-            <span class="sr-only">
-                Найти
-            </span>
-        </button>
-    </div>
-</form>
-    <div class="filter-services filters__item">
+    <div class="filters">
+        
+<div class="filter-services filters__item">
     <h3 class="filter-services__title subtitle">
         Услуги
     </h3>
@@ -246,27 +234,341 @@
         </li>
     </ul>
 </div>
-    <div class="filter-form filters__item">
+
+
+
+
+<div class="filter-form filters__item">
     <h3 class="filter-form__title subtitle">
         Записаться
     </h3>
     <div class="filter-form__bg" style="background-image: url('img/form-bg.jpg')"></div>
     <form class="filter-form__form form" action="#">
-        <label class="sr-only" for="filter-form__name">
-            Введите ваше имя
-        </label>
-        <input class="form__field" type="text" id="filter-form__name" placeholder="Ваше имя*" required>
-        <label class="sr-only" for="filter-form__tel">
-            Введите ваш номер телефона
-        </label>
-        <input class="form__field" type="tel" id="filter-form__tel" placeholder="Ваш номер телефона *" required>
+        <div class="form__item">
+            <label class="sr-only" for="filter-form__name">
+                Введите ваше имя
+            </label>
+            <input class="filter-form__field form__field" type="text" id="filter-form__name" placeholder="Ваше имя*" required>
+        </div>
+        <div class="form__item">
+            <label class="sr-only" for="filter-form__tel">
+                Введите ваш номер телефона
+            </label>
+            <input class="filter-form__field form__field" type="tel" id="filter-form__tel" placeholder="Ваш номер телефона *" required>
+        </div>
         <button class="filter-form__btn" type="submit">
             Записаться на прием
         </button>
     </form>
 </div>
+
+
+
+    </div>
 </section>
-            
+            <section class="price-page">
+    <h2 class="title">
+        Цены на стоматологические услуги
+    </h2>
+    <ul class="price-page__content">
+        <li class="price">
+            <h3 class="price__title">
+                Диагностика
+            </h3>
+            <ul class="price__items">
+                <li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Прицельный снимок
+        </span>
+        <span class="price__price">
+            600 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Компьютерная томография зубов
+        </span>
+        <span class="price__price">
+            3000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Компьютерная томография придаточных пазух носа
+        </span>
+        <span class="price__price">
+            3500 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортопантомограмма
+        </span>
+        <span class="price__price">
+            1300 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Рентгеновский снимок зуба
+        </span>
+        <span class="price__price">
+            1000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Телерентгенография
+        </span>
+        <span class="price__price">
+            1400 ₽
+        </span>
+    </a>
+</li>
+            </ul>
+        </li>
+        <li class="price">
+            <h3 class="price__title">
+                Отбеливание
+            </h3>
+            <ul class="price__items">
+                <li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Отбеливание зубов системой Opalescence
+        </span>
+        <span class="price__price">
+            17 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Отбеливание зубов ZOOM 4
+        </span>
+        <span class="price__price">
+            28 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Отбеливание зубов Amazing White
+        </span>
+        <span class="price__price">
+            10 000 ₽
+        </span>
+    </a>
+</li>
+            </ul>
+        </li>
+        <li class="price">
+            <h3 class="price__title">
+                Ортодонтия
+            </h3>
+            <ul class="price__items">
+                <li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Исследование на диагностических моделях челюстей
+        </span>
+        <span class="price__price">
+            1500 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Антропометрическое исследование и составление плана лечения
+        </span>
+        <span class="price__price">
+            2450 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция съемным ортодонтическим аппаратом
+        </span>
+        <span class="price__price">
+            6500 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция несъемным аппаратом
+        </span>
+        <span class="price__price">
+            4000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Изготовление лингвальных брекетов Win
+        </span>
+        <span class="price__price">
+            85 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы (1 степень сложности 12-18 мес)
+        </span>
+        <span class="price__price">
+            75 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы (2 степень сложности 18-24 мес)
+        </span>
+        <span class="price__price">
+            100 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы (3 степень сложности 18-36 мес)
+        </span>
+        <span class="price__price">
+            120 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы части зубного ряда (6-9 мес)
+        </span>
+        <span class="price__price">
+            18 800 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Стоимость аппаратуры с брекетами «H-4» (металлические)
+        </span>
+        <span class="price__price">
+            50 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Стоимость аппаратуры с брекетами «Daymon-Q» (металлические)
+        </span>
+        <span class="price__price">
+            55 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Стоимость аппаратуры с сапфировыми брекетами, брекетами Daymon Clear
+        </span>
+        <span class="price__price">
+            63 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы — фиксация на одну челюсть
+        </span>
+        <span class="price__price">
+            30 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы — активация
+        </span>
+        <span class="price__price">
+            4550 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением брекет-системы «Insignia»
+        </span>
+        <span class="price__price">
+            70 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Локальная ортодонтическая коррекция при помощи микроимплантатов
+        </span>
+        <span class="price__price">
+            150 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Ортодонтическая коррекция с применением ортодонтических накладок
+        </span>
+        <span class="price__price">
+            2000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Локальная ортодонтическая коррекция при помощи микроимплантатов
+        </span>
+        <span class="price__price">
+            155 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Лечение элайнерами 3D Smile, стоимость «под ключ»
+        </span>
+        <span class="price__price">
+            300 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Брекеты керамические безлигатурные Clarity
+        </span>
+        <span class="price__price">
+            90 000 ₽
+        </span>
+    </a>
+</li><li class="price__item">
+    <a class="price__link" href="#">
+        <span class="price__name">
+            Брекеты лингвальные Incognito
+        </span>
+        <span class="price__price">
+            140 000 ₽
+        </span>
+    </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+
         </div>
     </div>
 </main>

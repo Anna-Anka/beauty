@@ -22,10 +22,11 @@
 @import 'components/stock-card';
 
 //Filters
-@import 'components/filter-search';
-@import 'components/filter-clinics';
-@import 'components/filter-services';
-@import 'components/filter-form';
+@import 'components/filters/_filters';
+@import 'components/filters/filter-search';
+@import 'components/filters/filter-clinics';
+@import 'components/filters/filter-services';
+@import 'components/filters/filter-form';
 
 
 //Home page
