@@ -131,19 +131,19 @@ body {
     line-height: 1.2;
 
     &::before {
-        height: 15px;
         bottom: 5px;
+        height: 15px;
     }
 }
 
 .subtitle {
+    margin-bottom: 30px;
     font-weight: $fw-500;
     font-size: 25px;
-    margin-bottom: 30px;
 
     &::before {
-        height: 10px;
         bottom: 3px;
+        height: 10px;
     }
 }
 
@@ -172,4 +172,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
+
+    &__right {
+        max-width: 941px;
+        margin-left: auto;
+    }
 }

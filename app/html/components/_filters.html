@@ -1,3 +1,49 @@
+@if (context.search === "yes") {
+<form class="filter-search filters__item" action="#">
+    <label class="sr-only" for="filter-search">
+        Поиск
+    </label>
+    <div class="filter-search__content">
+        <input class="filter-search__field" type="search" id="filter-search" placeholder="Поиск" name="filter-search" required>
+        <button class="filter-search__btn" type="button">
+            <span class="sr-only">
+                Найти
+            </span>
+        </button>
+    </div>
+</form>
+}
+
+@if (context.clinics === "yes") {
+<div class="filter-clinics filters__item">
+    <h3 class="filter-clinics__title subtitle">
+        Клиники
+    </h3>
+    <ul class="filter-clinics__items">
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Динамо Ленинградский проспект д. 33А
+            </a>
+        </li>
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Беговая Хорошевское шоссе, 22
+            </a>
+        </li>
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Киевская, Украинский бул., д. 6
+            </a>
+        </li>
+        <li class="filter-clinics__item">
+            <a class="filter-clinics__link" href="#">
+                м. Марьино ул. Люблинская, д.161
+            </a>
+        </li>
+    </ul>
+</div>
+}
+
 @if (context.services === "yes") {
 <div class="filter-services filters__item">
     <h3 class="filter-services__title subtitle">
@@ -88,21 +134,6 @@
 </div>
 }
 
-@if (context.search === "yes") {
-<form class="filter-search filters__item" action="#">
-    <label class="sr-only" for="filter-search">
-        Поиск
-    </label>
-    <div class="filter-search__content">
-        <input class="filter-search__field" type="search" id="filter-search" placeholder="Поиск" name="filter-search" required>
-        <button class="filter-search__btn" type="button">
-            <span class="sr-only">
-                Найти
-            </span>
-        </button>
-    </div>
-</form>
-}
 @if (context.form === "yes") {
 <div class="filter-form filters__item">
     <h3 class="filter-form__title subtitle">
@@ -126,35 +157,5 @@
             Записаться на прием
         </button>
     </form>
-</div>
-}
-
-@if (context.clinics === "yes") {
-<div class="filter-clinics filters__item">
-    <h3 class="filter-clinics__title subtitle">
-        Клиники
-    </h3>
-    <ul class="filter-clinics__items">
-        <li class="filter-clinics__item">
-            <a class="filter-clinics__link" href="#">
-                м. Динамо Ленинградский проспект д. 33А
-            </a>
-        </li>
-        <li class="filter-clinics__item">
-            <a class="filter-clinics__link" href="#">
-                м. Беговая Хорошевское шоссе, 22
-            </a>
-        </li>
-        <li class="filter-clinics__item">
-            <a class="filter-clinics__link" href="#">
-                м. Киевская, Украинский бул., д. 6
-            </a>
-        </li>
-        <li class="filter-clinics__item">
-            <a class="filter-clinics__link" href="#">
-                м. Марьино ул. Люблинская, д.161
-            </a>
-        </li>
-    </ul>
 </div>
 }

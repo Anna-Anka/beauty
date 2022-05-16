@@ -1,0 +1,33 @@
+<section class="other section">
+    <div class="container">
+        <h2 class="title">
+            Специалисты по терапии
+        </h2>
+        <ul class="other__items">
+            <li class="other__item">
+                @include("../components/_doctor-card.html", {
+                "img" : "borisova",
+                "alt" : "Борисова Ксения Ивановна",
+                "title" : "Борисова Ксения Ивановна",
+                "speciality" : "Генеральный директор, стоматолог-терапевт"
+                })
+            </li>
+            <li class="other__item">
+                @include("../components/_doctor-card.html", {
+                "img" : "alekseev",
+                "alt" : "Алексеев Адольф Михайлович",
+                "title" : "Алексеев Адольф Михайлович",
+                "speciality" : "Главный врач, стоматолог-терапевт"
+                })
+            </li>
+            <li class="other__item">
+                @include("../components/_doctor-card.html", {
+                "img" : "subbotina",
+                "alt" : "Субботина Милда Германновна",
+                "title" : "Субботина Милда Германновна",
+                "speciality" : "Cтоматолог-терапевт"
+                })
+            </li>
+        </ul>
+    </div>
+</section>

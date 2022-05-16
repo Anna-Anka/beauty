@@ -1,11 +1,13 @@
-<section class="price-page">
+<section class="price-info">
     <h2 class="title">
         Цены на стоматологические услуги
     </h2>
-    <ul class="price-page__content">
+    <ul class="price-info__content">
         <li class="price">
             <h3 class="price__title">
-                Диагностика
+                <a class="price__link" href="#">
+                    Диагностика
+                </a>
             </h3>
             <ul class="price__items">
                 @loop("../components/_price-card.html", [
@@ -20,7 +22,9 @@
         </li>
         <li class="price">
             <h3 class="price__title">
-                Отбеливание
+                <a class="price__link" href="#">
+                    Отбеливание
+                </a>
             </h3>
             <ul class="price__items">
                 @loop("../components/_price-card.html", [
@@ -32,7 +36,9 @@
         </li>
         <li class="price">
             <h3 class="price__title">
-                Ортодонтия
+                <a class="price__link" href="#">
+                    Ортодонтия
+                </a>
             </h3>
             <ul class="price__items">
                 @loop("../components/_price-card.html", [
