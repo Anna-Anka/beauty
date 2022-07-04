@@ -13,6 +13,8 @@
 @import 'components/comparison';
 @import 'components/other';
 @import 'components/price';
+@import 'components/content-tabs';
+@import 'components/questions';
 @import 'components/footer';
 
 //Cards
@@ -29,7 +31,6 @@
 @import 'components/filters/filter-services';
 @import 'components/filters/filter-form';
 
-
 //Home page
 @import 'home-page/main-slider';
 @import 'home-page/services';
@@ -42,12 +43,10 @@
 @import 'about-page/technology';
 @import 'about-page/offer';
 @import 'about-page/awards';
-@import 'about-page/history';
 
 //Installment page
 @import 'installment-page/treatment';
 @import 'installment-page/stages-registration';
-@import 'installment-page/installment-question';
 
 //Doctors page
 @import 'doctors-page/doctors';
@@ -60,3 +59,4 @@
 @import 'doctor-page/reviews';
 
 //Services page
+@import 'service-page/content';

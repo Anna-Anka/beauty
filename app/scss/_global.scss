@@ -51,7 +51,7 @@ body {
         background-color: $blue-800;
     }
 
-    
+
     &--normal {
         color: $light-100;
         background-color: $purple-800;
@@ -74,7 +74,7 @@ body {
 
         &:hover {
             color: $light-100;
-            background-color: $purple-800; 
+            background-color: $purple-800;
 
             .button__icon--purple {
                 fill: $white;
@@ -174,7 +174,12 @@ body {
     padding: 60px 0;
 
     &__right {
+        width: 100%;
         max-width: 941px;
         margin-left: auto;
     }
+}
+
+.history {
+    text-align: center;
 }

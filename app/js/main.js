@@ -43,7 +43,6 @@ $(function () {
     })
 
     //Табы
-
     $('.contacts-tabs__link').on('click', function (e) {
         e.preventDefault();
         $('.contacts-tabs__link').removeClass('contacts-tabs__link--active');
@@ -57,13 +56,13 @@ $(function () {
         $('.contacts__content').addClass('contacts__content--active');
     })
 
-    $('.history__link').on('click', function (e) {
+    $('.content__link').on('click', function (e) {
         e.preventDefault();
-        $('.history__link').removeClass('history__link--active');
-        $(this).addClass('history__link--active');
+        $('.content__link').removeClass('content__link--active');
+        $(this).addClass('content__link--active');
 
-        $('.history__content').removeClass('history__content--active');
-        $($(this).attr('href')).addClass('history__content--active');
+        $('.content__content').removeClass('content__content--active');
+        $($(this).attr('href')).addClass('content__content--active');
     });
 
     $('.doctor-biography__link').on('click', function (e) {
@@ -102,7 +101,7 @@ $(function () {
         width = "340%"
     });
 
-    $('.doctor - biography__certificate').fancybox({
+    $('.doctor-biography__certificate').fancybox({
         width = "340%"
     });
 });

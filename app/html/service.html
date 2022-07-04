@@ -1,5 +1,5 @@
 @include("./components/_top.html", {
-"title" : "Beauty — стоматологическая клиника | О нас"
+"title" : "Beauty — стоматологическая клиника | Кариес"
 })
 
 @include("./components/_header.html")
@@ -11,14 +11,15 @@
         <div class="main-wrapper">
             @include("./service-page/_service-filters.html")
             <div class="main-wrapper__right">
+                @include("./service-page/content/_caries.html")
+                @include("./service-page/content/_pulpits.html")
+                @include("./service-page/content/_extraction.html")
                 @include("./service-page/_prices.html")
                 @include("./service-page/_questions.html")
                 @include("./service-page/_other.html")
             </div>
         </div>
-
     </div>
-
 </main>
 @include("./components/_contacts.html")
 @include("./components/_footer.html")

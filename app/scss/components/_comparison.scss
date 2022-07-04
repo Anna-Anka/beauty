@@ -2,6 +2,13 @@
     position: relative;
     display: flex;
 
+    &--big {
+        .comparison__left,
+        .comparison__right {
+            padding: 30px 45px;
+        }
+    }
+
     &::before,
     &::after {
         position: absolute;
@@ -24,7 +31,7 @@
     &__left,
     &__right {
         width: 50%;
-        padding: 30px 45px;
+        padding: 30px 20px;
         text-align: center;
         background-color: $white;
     }
@@ -73,6 +80,14 @@
                     filter: none;
                     width: 17px;
                     height: 17px;
+                }
+            }
+        }
+
+        &--text {
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 10px;
                 }
             }
         }
