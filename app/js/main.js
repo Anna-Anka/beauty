@@ -1,4 +1,37 @@
 $(function () {
+    //Табы
+    $('.contacts-tabs__link').on('click', function (e) {
+        e.preventDefault();
+        $('.contacts-tabs__link').removeClass('contacts-tabs__link--active');
+        $(this).addClass('contacts-tabs__link--active');
+
+        $('.contacts-tabs__content').removeClass('contacts-tabs__content--active');
+        $($(this).attr('href')).addClass('contacts-tabs__content--active');
+    });
+
+    $('.contacts-tabs__link').on('click', function () {
+        $('.contacts__content').addClass('contacts__content--active');
+        $(".contacts-tabs__slider").slick('slickSetOption', 'adaptiveHeight', true, true);
+    })
+
+    $('.content__link').on('click', function (e) {
+        e.preventDefault();
+        $('.content__link').removeClass('content__link--active');
+        $(this).addClass('content__link--active');
+
+        $('.content__content').removeClass('content__content--active');
+        $($(this).attr('href')).addClass('content__content--active');
+    });
+
+    $('.doctor-biography__link').on('click', function (e) {
+        e.preventDefault();
+        $('.doctor-biography__link').removeClass('doctor-biography__link--active');
+        $(this).addClass('doctor-biography__link--active');
+
+        $('.doctor-biography__content').removeClass('doctor-biography__content--active');
+        $($(this).attr('href')).addClass('doctor-biography__content--active');
+    });
+
     $('.header__items').slick({
         dots: false,
         arrows: true,
@@ -23,6 +56,7 @@ $(function () {
         prevArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--prev"><svg class="contacts-tabs__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
         nextArrow: '<button class="contacts-tabs__arrow contacts-tabs__arrow--next"><svg class="contacts-tabs__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
         infinite: false,
+        autoplay: false,
     })
 
     $('.awards__items').slick({
@@ -41,38 +75,6 @@ $(function () {
         nextArrow: '<button class="doctor-reviews__arrow doctor-reviews__arrow--next"><svg class="doctor-reviews__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
         // adaptiveHeight: true,
     })
-
-    //Табы
-    $('.contacts-tabs__link').on('click', function (e) {
-        e.preventDefault();
-        $('.contacts-tabs__link').removeClass('contacts-tabs__link--active');
-        $(this).addClass('contacts-tabs__link--active');
-
-        $('.contacts-tabs__content').removeClass('contacts-tabs__content--active');
-        $($(this).attr('href')).addClass('contacts-tabs__content--active');
-    });
-
-    $('.contacts-tabs__link').on('click', function () {
-        $('.contacts__content').addClass('contacts__content--active');
-    })
-
-    $('.content__link').on('click', function (e) {
-        e.preventDefault();
-        $('.content__link').removeClass('content__link--active');
-        $(this).addClass('content__link--active');
-
-        $('.content__content').removeClass('content__content--active');
-        $($(this).attr('href')).addClass('content__content--active');
-    });
-
-    $('.doctor-biography__link').on('click', function (e) {
-        e.preventDefault();
-        $('.doctor-biography__link').removeClass('doctor-biography__link--active');
-        $(this).addClass('doctor-biography__link--active');
-
-        $('.doctor-biography__content').removeClass('doctor-biography__content--active');
-        $($(this).attr('href')).addClass('doctor-biography__content--active');
-    });
 
     //Счетчик
     const number = document.querySelectorAll('.about-numbers__number');
