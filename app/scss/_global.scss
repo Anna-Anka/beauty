@@ -32,21 +32,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 37px 10px 15px;
+    padding: 10px 15px;
+    color: $light-100;
+    background-color: $purple-800;
     border: 1px solid transparent;
     box-shadow: 5px 5px 10px rgba($purple-800, 0.25);
     transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out, color 0.4s ease-in-out;
-    color: $light-100;
-    background-color: $purple-800;
-    position: relative;
 
     &:focus {
         color: $blue-800;
         background-color: $white;
         border-color: $blue-800;
 
-        &::before {
-            filter: invert(36%) sepia(79%) saturate(2170%) hue-rotate(208deg) brightness(90%) contrast(96%);
+        .button__icon {
+            fill: $blue-800;
         }
     }
 
@@ -55,8 +54,8 @@ body {
         background-color: transparent;
         border-color: $purple-800;
 
-        &::before {
-            filter: invert(38%) sepia(62%) saturate(2044%) hue-rotate(287deg) brightness(89%) contrast(86%);
+        .button__icon {
+            fill: $purple-800;
         }
     }
 
@@ -64,59 +63,31 @@ body {
         background-color: $blue-800;
     }
 
-
-    &::before {
-        @include background;
-        position: absolute;
-        content: "";
-        width: 17px;
-        height: 17px;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10px;
-        background-size: cover;
-        transition: filter 0.3s;
-        filter: invert(99%) sepia(85%) saturate(2%) hue-rotate(159deg) brightness(111%) contrast(100%);
-    }
-
-    &--arrow {
-        &::before {
-            background-image: url('../img/sprite.svg#next-icon');
-            width: 12px;
-            height: 8px;
-        }
-    }
-
-    &--call {
-        &::before {
-            background-image: url('../img/sprite.svg#phone-icon');
-        }
-    }
-
-    &--sign {
-        &::before {
-            background-image: url('../img/sprite.svg#sign-icon');
-        }
-    }
-
     &--border {
         color: $purple-800;
         background-color: transparent;
         border-color: $purple-800;
 
-        &::before {
-            filter: invert(56%) sepia(21%) saturate(6476%) hue-rotate(287deg) brightness(89%) contrast(88%);
+        .button__icon {
+            fill: $purple-800;
         }
 
         &:hover {
             color: $light-100;
             background-color: $purple-800;
 
-            &::before  {
-                filter: none;
-                filter: invert(98%) sepia(0%) saturate(7492%) hue-rotate(202deg) brightness(103%) contrast(99%);
+            .button__icon {
+                fill: $white;
             }
         }
+    }
+
+    &__icon {
+        width: 25px;
+        height: 17px;
+        padding-left: 8px;
+        transition: fill 0.4s;
+        fill: $white;
     }
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty — стоматологическая клиника | Борисов Михаил Петрович</title>
+    <title>Beauty Dent — стоматологическая клиника | Борисов Михаил Петрович</title>
     <link rel="stylesheet" href="css/style.min.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -138,7 +138,7 @@
 
 <main class="main">
     <h1 class="sr-only">
-        Beauty Dent — сеть стоматологических клиник в Москве
+        Борисов Михаил Петрович
     </h1>
 
     <div class="container">
@@ -329,13 +329,19 @@
             </ul>
             <ul class="doctor-info__btns">
                 <li class="doctor-info__item">
-                    <button class="doctor-info__btn button button--border" type="button">
+                    <button class="button button--border" type="button">
                         Оставить отзыв
+                        <svg class="button__icon">
+                            <use xlink:href="img/sprite.svg#sign-icon"></use>
+                        </svg>
                     </button>
                 </li>
                 <li class="doctor-info__item">
-                    <button class="doctor-info__btn button button--normal" type="button">
+                    <button class="button" type="button">
                         Записаться на прием
+                        <svg class="button__icon">
+                            <use xlink:href="img/sprite.svg#sign-icon"></use>
+                        </svg>
                     </button>
                 </li>
             </ul>
@@ -422,15 +428,16 @@
                     <cite class="doctor-reviews__author">
                         <span class="doctor-reviews__name">
                             Тихонова Маргарита Тимофеевна
-                        </span> 
+                        </span>
                         <span class="doctor-reviews__rating"></span>
                     </cite>
                     <div class="doctor-reviews__text">
                         <p>
-                           Начну с того,что очень боюсь врачей, особенно стоматологов... когда попала в клинику, сразу поняла какой здесь высокий уровень! Администраторы очень вежливые и внимательные,
-                           уверяли что бояться нечего,но страх все равно не покидал меня... но когда Михаил Петрович приступил к лечению, предварительно обсудив со мной план лечение и доходчиво
-                           объяснил что, как и почему он будет делать, я поняла, что передо мной высококвалифицированный специалист с золотыми руками! У меня не простая ситуация, но доктор мне очень
-                           помог.
+                            Начну с того,что очень боюсь врачей, особенно стоматологов... когда попала в клинику, сразу поняла какой здесь высокий уровень! Администраторы очень вежливые и
+                            внимательные,
+                            уверяли что бояться нечего,но страх все равно не покидал меня... но когда Михаил Петрович приступил к лечению, предварительно обсудив со мной план лечение и доходчиво
+                            объяснил что, как и почему он будет делать, я поняла, что передо мной высококвалифицированный специалист с золотыми руками! У меня не простая ситуация, но доктор мне очень
+                            помог.
                         </p>
                         <p>
                             Он не только вылечил мне зуб, но и развеял все мои страхи перед стоматологией! Когда мне делали анестезию, я ее даже не почувствовала... Михаил Петрович очень
@@ -467,19 +474,27 @@
             <li class="other__item">
                 <article class="doctor-card">
     <img class="doctor-card__img" src="img/doctors/kozlova.jpg" alt="Козлова Элиза Фроловна" width="290" height="240" loading="lazy">
-    <div class="doctor-card__content">
+    <div class="doctor-card__info">
         <h3 class="doctor-card__title">
             Козлова Элиза Фроловна
         </h3>
         <p class="doctor-card__speciality">
             Cтоматолог-ортопед
         </p>
-        <a class="doctor-card__link button button--border" href="#">
-            Подробнее
-        </a>
-        <button class="doctor-card__btn button button--normal" type="button">
-            Записаться на прием
-        </button>
+        <div class="doctor-card__buttons">
+            <a class="doctor-card__link button button--border" href="#">
+                Подробнее
+                <svg class="button__icon">
+                    <use xlink:href="img/sprite.svg#next-icon"></use>
+                </svg>
+            </a>
+            <button class="button" type="button">
+                Записаться на прием
+                <svg class="button__icon">
+                    <use xlink:href="img/sprite.svg#sign-icon"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 </article>
             </li>
@@ -649,8 +664,11 @@
                     </label>
                     <textarea class="form__field form__field--message" id="form__name-message" name="form__message" required placeholder="Ваш номер телефона"></textarea>
                 </div>
-                <button class="form__button button button--arrow" type="submit">
+                <button class="form__button button" type="submit">
                     Отправить
+                    <svg class="button__icon">
+                        <use xlink:href="img/sprite.svg#next-icon"></use>
+                    </svg>
                 </button>
             </form>
         </div>
@@ -674,8 +692,11 @@
                             </span>
                         </p>
                     </div>
-                    <button class="button button--sign" type="button">
+                    <button class="button" type="button">
                         Записаться на прием
+                        <svg class="button__icon">
+                            <use xlink:href="img/sprite.svg#sign-icon"></use>
+                        </svg>
                     </button>
                 </div>
                 <ul class="footer__lists">

@@ -88,6 +88,14 @@
             left: initial;
             left: 88px
         }
+
+        &:hover {
+            background-color: $white;
+
+            .doctor-reviews__icon {
+                fill: $blue-100;
+            }
+        }
     }
 
     &__icon {
