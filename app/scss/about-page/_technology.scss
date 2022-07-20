@@ -119,9 +119,7 @@
     &__title {
         position: relative;
         margin-bottom: 20px;
-        font-weight: $fw-500;
-        font-size: 19px;
-        line-height: 1;
+        @include small-title;
 
         &::before {
             position: absolute;

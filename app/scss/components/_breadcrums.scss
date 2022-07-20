@@ -1,11 +1,60 @@
 .breadcrums {
-    background-color: $blue-800;
     color: $white;
-    padding: 15px 0;
+    font-weight: $fw-500;
+    line-height: 1;
+    background-color: $blue-800;
+
+    &__items {
+        display: flex;
+        justify-content: center;
+    }
 
     &__item {
         &:not(:last-child) {
-            
+            position: relative;
+            margin-right: 10px;
+            padding-right: 25px;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 15px;
+                height: 10px;
+                background-image: url("../img/icons/next-icon.svg");
+                transform: translateY(-50%);
+                content: "";
+                @include background
+            }
+
+            .breadcrums__link {
+                border: 1px solid transparent;
+                transition: color 0.5s, background-color 0.5s;
+
+                &:focus {
+                    color: $blue-800;
+                    border-color: $blue-800;
+                }
+
+                &:hover {
+                    color: $blue-800;
+                }
+
+                &:active {
+                    color: $purple-800;
+                }
+
+                &:focus,
+                &:hover,
+                &:active {
+                    background-color: $light-100;
+                }
+            }
         }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 15px 5px;
     }
 }

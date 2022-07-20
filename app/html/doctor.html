@@ -2,7 +2,15 @@
     "title" : "Beauty Dent — стоматологическая клиника | Борисов Михаил Петрович"
 })
 
-@include("./components/_header.html")
+@include("./components/_header.html", {
+"navigation" : "false"
+})
+
+@include('./components/_breadcrums.html', {
+    "second" : "Врачи",
+    "href" : 'href="#"',
+    "next" : '<li class="breadcrums__item"><a class="breadcrums__link">Борисов Михаил Петрович</a></li>'
+})
 
 <main class="main">
     <h1 class="sr-only">

@@ -47,9 +47,7 @@
 
     &__title {
         margin-bottom: 15px;
-        font-weight: $fw-500;
-        font-size: 19px;
-        line-height: 1;
+        @include small-title;
     }
 
     &__text {

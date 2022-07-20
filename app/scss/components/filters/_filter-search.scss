@@ -31,6 +31,8 @@
         height: auto;
         padding-left: 2px;
         background-color: $white;
+        border: 1px solid transparent;
+        transition: border-color 0.4s;
 
         &::before,
         &::after {
@@ -44,6 +46,7 @@
             left: 0;
             width: 1px;
             background-color: $blue-100;
+            transition: opacity 0.3s;
         }
 
         &::before {
@@ -54,7 +57,30 @@
             height: 17px;
             background-image: url('../img/sprite.svg#search-icon');
             transform: translate(-50%, -50%);
+            transition: filter 0.3s;
             filter: invert(99%) sepia(35%) saturate(2339%) hue-rotate(177deg) brightness(100%) contrast(96%);
+        }
+
+        &:focus {
+            border-color: $blue-800;
+        }
+
+        &:hover {
+            &::before {
+                filter: invert(32%) sepia(85%) saturate(2650%) hue-rotate(212deg) brightness(94%) contrast(87%);
+            }
+           
+        }
+
+        &:focus,
+        &:active {
+            &::after {
+                opacity: 0;
+            }
+        }
+
+        &:active {
+            border-color: $purple-800;
         }
     }
 }

@@ -34,8 +34,7 @@
     &__title {
         margin-bottom: 5px;
         color: $blue-800;
-        font-weight: $fw-500;
-        font-size: 25px;
+        @include average-title;
     }
 
     &__item {

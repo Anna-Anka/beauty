@@ -143,6 +143,16 @@ body {
     }
 }
 
+.title-small {
+    font-weight: $fw-500;
+    font-size: 25px;
+    line-height: 1.1;
+
+    &--color {
+        color: $blue-800;
+    }
+}
+
 .logo {
     display: block;
     transition: opacity 0.4s, box-shadow 0.4s;

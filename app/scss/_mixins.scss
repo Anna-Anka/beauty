@@ -62,6 +62,12 @@
     }
 }
 
+@mixin average-title {
+    font-weight: $fw-500;
+    font-size: 25px;
+    line-height: 1.1;
+}
+
 @mixin small-title {
     font-weight: $fw-500;
     font-size: 19px;

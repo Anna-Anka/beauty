@@ -1,8 +1,16 @@
 @include("./components/_top.html", {
-"title" : "Beauty Dent — стоматологическая клиника | Цены"
+    "title" : "Beauty Dent — стоматологическая клиника | Цены"
 })
 
-@include("./components/_header.html")
+@include("./components/_header.html", {
+    "navigation" : "false"
+})
+
+@include('./components/_breadcrums.html', {
+    "second" : "Цены",
+    "href" : '',
+})
+
 <main class="main">
     <h1 class="sr-only">
         Наши цены

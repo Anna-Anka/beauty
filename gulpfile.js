@@ -66,7 +66,7 @@ function htmlInclude() {
             basepath: '@file',
         }))
         .pipe(dest('app'))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
 }
 
 function browsersync() {

@@ -1,14 +1,19 @@
-<ul class="breadcrums">
+<div class="breadcrums">
     <div class="container">
-        <li class="breadcrums__item">
-            <a class="breadcrums__link" href="#">
-                Главаная
-            </a>
-        </li>
-        <li class="breadcrums__item">
-            <a class="breadcrums__link" href="#">
-                О нас
-            </a>
-        </li>
+        <ul class="breadcrums__items">
+            <li class="breadcrums__item">
+                <a class="breadcrums__link" href="#">
+                    Главная
+                </a>
+            </li>
+           <li class="breadcrums__item">
+               <a class="breadcrums__link" @href>
+                   @second
+               </a>
+           </li>
+           @if (context.more === "true") {
+            @next
+           }
+        </ul>
     </div>
-</ul>
+</div>

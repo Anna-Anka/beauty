@@ -1,8 +1,16 @@
 @include("./components/_top.html", {
-"title" : "Beauty Dent — стоматологическая клиника | Лечение"
+    "title" : "Beauty Dent — стоматологическая клиника | Лечение"
 })
 
-@include("./components/_header.html")
+@include("./components/_header.html", {
+    "navigation" : "false"
+})
+
+@include('./components/_breadcrums.html', {
+    "second" : "Терапия",
+    "href" : '',
+})
+
 <main class="main">
     <h1 class="sr-only">
         Лечение

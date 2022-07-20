@@ -1,18 +1,40 @@
 @include("./components/_top.html", {
-"title" : "Beauty Dent — стоматологическая клиника | Главная страница"
+    "title" : "Beauty Dent — стоматологическая клиника | Главная страница"
 })
 
-@include("./components/_header.html")
+@include("./components/_header.html", {
+    "navigation" : "true"
+})
+
 <main class="main">
     <h1 class="sr-only">
         Cеть стоматологических клиник в Москве
     </h1>
     @include("./home-page/_main-slider.html")
+
+    @include("./components/_banner-form.html", {
+        "title" : "Заказать звонок",
+        "text" : "Заполните форму и мы перезвоним",
+        "btn" : "Заказать звонок",
+        "icon" : "phone"
+    })
+
     @include("./home-page/_services.html")
+
     @include("./home-page/_advantages.html")
+
     @include("./home-page/_about-numbers.html")
+
+    @include("./components/_banner-form.html", {
+        "title" : "Записаться на прием",
+        "text" : "Заполните форму и мы перезвоним",
+        "btn" : "Записаться на прием",
+        "icon" : "sign"
+    })
+
     @include("./home-page/_stock.html")
 </main>
+
 @include("./components/_contacts.html")
 @include("./components/_footer.html")
 @include("./components/_bottom.html")
