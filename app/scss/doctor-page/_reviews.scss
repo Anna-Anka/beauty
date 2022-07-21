@@ -15,7 +15,7 @@
     &__content {
         display: flex;
         width: 100%;
-        padding: 25px 35px;
+        padding: 25px 10px 25px 35px;
     }
 
     &__author {
@@ -53,10 +53,19 @@
 
     &__text {
         position: relative;
-        max-width: 480px;
+        max-width: 500px;
         height: 230px;
         padding-left: 10px;
         overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $blue-100;
+            border-radius: 3px;
+        }
 
         p {
             &:not(:last-child) {

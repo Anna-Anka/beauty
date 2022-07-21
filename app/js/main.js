@@ -73,7 +73,11 @@ $(function () {
         arrows: true,
         prevArrow: '<button class="doctor-reviews__arrow doctor-reviews__arrow--prev"><svg class="doctor-reviews__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
         nextArrow: '<button class="doctor-reviews__arrow doctor-reviews__arrow--next"><svg class="doctor-reviews__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
-        // adaptiveHeight: true,
+    })
+
+    //Анимация стрелок
+    $('.doctor-reviews__arrow').on('click', function() {
+        $('.doctor-reviews__arrow').slideUp(0).delay(400).fadeIn(200);
     })
 
     //Счетчик
@@ -95,7 +99,6 @@ $(function () {
                 }, 0.00001);
             }
         });
-
     });
 
     //Fancybox

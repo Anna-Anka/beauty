@@ -23,30 +23,7 @@
     }
 
     &__link {
-        position: relative;
-        display: inline-block;
-        border: 1px solid transparent;
-        transition: border-color 0.3s, opacity 0.3s;
-
-        &::before {
-            @include overlay;
-            z-index: 0;
-            transition: background-color 0.3s;
-        }
-
-        &:focus {
-            border-color: $purple-800;
-        }
-
-        &:hover {
-            &::before {
-                background-color: rgba($blue-100, 0.65);
-            }
-        }
-
-        &:active {
-            opacity: 0.5;
-        }
+        @include certificate;
     }
 
     &__img {

@@ -221,3 +221,54 @@
     transition: fill 0.4s;
     fill: $light-100;
 }
+
+@mixin certificate {
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: border-color 0.3s,
+    opacity 0.3s;
+
+    &::before {
+        @include overlay;
+        z-index: 0;
+        transition: background-color 0.5s;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        background-image: url("../img/icons/search-icon.svg");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 0.4s;
+        filter: invert(23%) sepia(102%) saturate(4246%) hue-rotate(557deg) brightness(134%) contrast(89%);
+    }
+
+    &:focus {
+        border-color: $purple-800;
+    }
+
+    &:hover {
+        &::before {
+            background-color: rgba($dark-800, 0.4);
+        }
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
