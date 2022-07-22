@@ -1,8 +1,8 @@
 .doctor-card {
     display: flex;
     flex-direction: column;
-    background-color: $white;
     width: 100%;
+    background-color: $white;
 
     &__buttons {
         display: flex;
@@ -23,11 +23,11 @@
     }
 
     &__info {
-        padding: 0 10px 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        padding: 0 10px 10px;
     }
 
     &__title,
@@ -38,11 +38,6 @@
     &__title {
         @include small-title;
     }
-
-    // &__link,
-    // &__btn {
-    //     width: 100%;
-    // }
 
     &__link {
         margin-bottom: 10px;

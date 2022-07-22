@@ -9,14 +9,21 @@
 //Components
 @import 'components/header';
 @import 'components/breadcrums';
-@import 'components/banner-form';
-@import 'components/contacts';
 @import 'components/comparison';
 @import 'components/other';
 @import 'components/price';
 @import 'components/content-tabs';
 @import 'components/questions';
 @import 'components/footer';
+
+//Forms
+@import 'components/forms/banner-form';
+@import 'components/forms/form';
+
+//Contacts
+@import 'components/contacts/contacts';
+@import 'components/contacts/contacts-tabs';
+@import 'components/contacts/contacts-info';
 
 //Cards
 @import 'components/cards/question-card';
@@ -51,7 +58,6 @@
 
 //Doctors page
 @import 'doctors-page/doctors';
-@import 'doctors-page/doctors-filters';
 
 //Doctor page
 @import 'doctor-page/doctor';
@@ -60,4 +66,8 @@
 @import 'doctor-page/reviews';
 
 //Services page
-@import 'service-page/content';
+@import 'service-page/service';
+@import 'service-page/service-descr';
+@import 'service-page/service-image';
+@import 'service-page/service-stages';
+@import 'service-page/service-four';

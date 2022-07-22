@@ -1,6 +1,6 @@
 .stages-registration {
-    background-color: $white;
     text-align: center;
+    background-color: $white;
 
     &__wrapper {
         display: flex;
@@ -8,8 +8,8 @@
     }
 
     &__content {
-        max-width: 643px;
         width: 100%;
+        max-width: 643px;
         margin-right: 15px;
     }
 

@@ -1,0 +1,53 @@
+.service-image {
+    display: flex;
+    justify-content: space-between;
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        .service-image__img {
+            margin-right: 0;
+        }
+
+        .service-image__content {
+            margin-right: 10px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 420px;
+        height: 260px;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__items {
+        max-width: 500px;
+        text-align: left;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 28px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/icon/rhombus.svg');
+            content: "";
+            @include background;
+        }
+    }
+}

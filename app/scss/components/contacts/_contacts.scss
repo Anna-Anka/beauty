@@ -1,0 +1,16 @@
+.contacts {
+    text-align: center;
+    background-color: $white;
+
+    &__content {
+        display: flex;
+
+        &--active {
+            display: none;
+        }
+    }
+
+    &__form {
+        max-width: 504px;
+    }
+}

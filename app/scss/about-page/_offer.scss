@@ -1,24 +1,20 @@
 .offer {
-    background-color: $white;
     position: relative;
-
+    background-color: $white;
 
     &__wrapper {
-        // display: flex;
-        // justify-content: space-between;
         max-width: 1570px;
         padding-right: 10px;
-        // min-height: 422px;
     }
 
     &__bg {
         @include background;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         max-width: 876px;
         height: 553px;
-        top: 0;
-        left: 0;
-        position: absolute;
     }
 
     &__content {

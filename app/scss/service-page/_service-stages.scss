@@ -1,0 +1,15 @@
+.service-stages {
+    width: 100%;
+    max-width: 643px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    &__items {
+        text-align: left;
+    }
+
+    &__item {
+        @include stages;
+    }
+}

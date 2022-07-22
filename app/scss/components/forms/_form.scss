@@ -1,0 +1,30 @@
+.form {
+    width: 100%;
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &--message {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+    
+    &__button {
+        width: 100%;
+    }
+
+    &__field {
+        @include field;
+
+        &--message {
+            min-height: 118px;
+            resize: vertical;
+        }
+    }
+}

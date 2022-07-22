@@ -1,0 +1,15 @@
+.service {
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 45px;
+    }
+
+    &>*:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+}
