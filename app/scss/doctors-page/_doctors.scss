@@ -23,6 +23,8 @@
     &__item {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
         box-shadow: 6px 5px 16px rgba($blue-100, 0.83);
     }
 }

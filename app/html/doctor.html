@@ -1,15 +1,15 @@
-@include("./components/_top.html", {
-    "title" : "Beauty Dent — стоматологическая клиника | Борисов Михаил Петрович"
+@include('./components/_top.html', {
+    'title' : 'Beauty Dent — стоматологическая клиника | Борисов Михаил Петрович'
 })
 
-@include("./components/_header.html", {
-"navigation" : "false"
+@include('./components/_header.html', {
+'navigation' : 'false'
 })
 
 @include('./components/_breadcrums.html', {
-    "second" : "Врачи",
-    "href" : 'href="#"',
-    "next" : '<li class="breadcrums__item"><a class="breadcrums__link">Борисов Михаил Петрович</a></li>'
+    'second' : 'Врачи',
+    'href' : 'href="#"',
+    'next' : '<li class="breadcrums__item"><a class="breadcrums__link">Борисов Михаил Петрович</a></li>'
 })
 
 <main class="main">
@@ -19,14 +19,14 @@
 
     <div class="container">
         <div class="main-wrapper">
-            @include("./doctor-page/_doctor-filters.html")
+            @include('./doctor-page/_doctor-filters.html')
             <div class="main-wrapper__right">
-                @include("./doctor-page/_doctor.html")
-                @include("./doctor-page/_other.html")
+                @include('./doctor-page/_doctor.html')
+                @include('./doctor-page/_other.html')
             </div>
         </div>
     </div>
 </main>
-@include("./components/_contacts.html")
-@include("./components/_footer.html")
-@include("./components/_bottom.html")
+@include('./components/_contacts.html')
+@include('./components/_footer.html')
+@include('./components/_bottom.html')

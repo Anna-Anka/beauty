@@ -25,7 +25,7 @@
     <div class="container">
         <div class="header__info">
             <a class="header__logo logo" href="#">
-                <img class="logo__img" href="#" src="img/logo.svg" alt="логотип" width="224" height="45">
+                <img class="logo__img" href="#" src="img/logo.svg" alt="логотип" width="224" height="45" loading="lazy">
             </a>
             <address class="header__inner">
                 <ul class="header__items">
@@ -264,7 +264,7 @@
         Борисов Михаил Петрович
     </h2>
     <div class="doctor-info">
-        <img class="doctor-info__img" src="img/about/author.jpg" alt="Борисов Михаил Петрович" width="300" height="260">
+        <img class="doctor-info__img" src="img/about/author.jpg" alt="Борисов Михаил Петрович" width="300" height="260" loading="lazy">
         <div class="doctor-info__right">
             <ul class="doctor-info__list">
                 <li class="doctor-info__statistics">
@@ -368,22 +368,22 @@
             <ul class="doctor-biography__list">
                 <li class="doctor-biography__content doctor-biography__content--active" id="biography-tab1">
                     <a class="doctor-biography__certificate" href="img/about/awards/1.jpg" data-fancybox="gallery">
-                        <img class="doctor-biography__img" src="img/about/awards/1.jpg" alt="Сертификат" width="170" height="220">
+                        <img class="doctor-biography__img" src="img/about/awards/1.jpg" alt="Сертификат" width="170" height="220" loading="lazy">
                     </a>
                 </li>
                 <li class="doctor-biography__content" id="biography-tab2">
                     <a class="doctor-biography__certificate" href="img/about/awards/2.jpg" data-fancybox="gallery">
-                        <img class="doctor-biography__img" src="img/about/awards/2.jpg" alt="Сертификат" width="170" height="220">
+                        <img class="doctor-biography__img" src="img/about/awards/2.jpg" alt="Сертификат" width="170" height="220" loading="lazy">
                     </a>
                 </li>
                 <li class="doctor-biography__content" id="biography-tab3">
                     <a class="doctor-biography__certificate" href="img/about/awards/3.jpg" data-fancybox="gallery">
-                        <img class="doctor-biography__img" src="img/about/awards/3.jpg" alt="Сертификат" width="170" height="220">
+                        <img class="doctor-biography__img" src="img/about/awards/3.jpg" alt="Сертификат" width="170" height="220" loading="lazy">
                     </a>
                 </li>
                 <li class="doctor-biography__content" id="biography-tab4">
                     <a class="doctor-biography__certificate" href="img/about/awards/4.jpg" data-fancybox="gallery">
-                        <img class="doctor-biography__img" src="img/about/awards/4.jpg" alt="Сертификат" width="170" height="220">
+                        <img class="doctor-biography__img" src="img/about/awards/4.jpg" alt="Сертификат" width="170" height="220" loading="lazy">
                     </a>
                 </li>
             </ul>
@@ -400,7 +400,9 @@
                         <span class="doctor-reviews__name">
                             Тихонова Маргарита Тимофеевна
                         </span>
-                        <span class="doctor-reviews__rating"></span>
+                        <span class="doctor-reviews__rating" data-rateyo-rating="4">
+                            <span class="sr-only"></span>
+                        </span>
                     </cite>
                     <div class="doctor-reviews__text">
                         <p>
@@ -437,40 +439,98 @@
     </div>
 </section>
                 <section class="other section">
-    <div class="container">
         <h2 class="title">
             Другие врачи ортопеды
         </h2>
         <ul class="other__items">
             <li class="other__item">
                 <article class="doctor-card">
-    <img class="doctor-card__img" src="img/doctors/kozlova.jpg" alt="Козлова Элиза Фроловна" width="290" height="240" loading="lazy">
-    <div class="doctor-card__info">
-        <h3 class="doctor-card__title">
-            Козлова Элиза Фроловна
-        </h3>
-        <p class="doctor-card__speciality">
-            Cтоматолог-ортопед
-        </p>
-        <div class="doctor-card__buttons">
-            <a class="doctor-card__link button button--border" href="#">
-                Подробнее
-                <svg class="button__icon">
-                    <use xlink:href="img/sprite.svg#next-icon"></use>
-                </svg>
-            </a>
-            <button class="button" type="button">
-                Записаться на прием
-                <svg class="button__icon">
-                    <use xlink:href="img/sprite.svg#sign-icon"></use>
-                </svg>
-            </button>
+    <div class="doctor-card__wrapper">
+        <img class="doctor-card__img" src="img/doctors/kozlova.jpg" alt="Козлова Элиза Фроловна" width="290" height="240" loading="lazy">
+        <div class="doctor-card__info">
+            <h3 class="doctor-card__title">
+                Козлова Элиза Фроловна
+            </h3>
+            <p class="doctor-card__speciality">
+                Cтоматолог-ортопед
+            </p>
         </div>
+    </div>
+    <div class="doctor-card__buttons">
+        <a class="doctor-card__link button button--border" href="#">
+            Подробнее
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#next-icon"></use>
+            </svg>
+        </a>
+        <button class="button" type="button">
+            Записаться на прием
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#sign-icon"></use>
+            </svg>
+        </button>
+    </div>
+</article>
+            </li>
+            <li class="other__item">
+                <article class="doctor-card">
+    <div class="doctor-card__wrapper">
+        <img class="doctor-card__img" src="img/doctors/kozlova.jpg" alt="Козлова Элиза Фроловна" width="290" height="240" loading="lazy">
+        <div class="doctor-card__info">
+            <h3 class="doctor-card__title">
+                Козлова Элиза Фроловна
+            </h3>
+            <p class="doctor-card__speciality">
+                Cтоматолог-ортопед
+            </p>
+        </div>
+    </div>
+    <div class="doctor-card__buttons">
+        <a class="doctor-card__link button button--border" href="#">
+            Подробнее
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#next-icon"></use>
+            </svg>
+        </a>
+        <button class="button" type="button">
+            Записаться на прием
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#sign-icon"></use>
+            </svg>
+        </button>
+    </div>
+</article>
+            </li>
+            <li class="other__item">
+                <article class="doctor-card">
+    <div class="doctor-card__wrapper">
+        <img class="doctor-card__img" src="img/doctors/kozlova.jpg" alt="Козлова Элиза Фроловна" width="290" height="240" loading="lazy">
+        <div class="doctor-card__info">
+            <h3 class="doctor-card__title">
+                Козлова Элиза Фроловна
+            </h3>
+            <p class="doctor-card__speciality">
+                Cтоматолог-ортопед
+            </p>
+        </div>
+    </div>
+    <div class="doctor-card__buttons">
+        <a class="doctor-card__link button button--border" href="#">
+            Подробнее
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#next-icon"></use>
+            </svg>
+        </a>
+        <button class="button" type="button">
+            Записаться на прием
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#sign-icon"></use>
+            </svg>
+        </button>
     </div>
 </article>
             </li>
         </ul>
-    </div>
 </section>
             </div>
         </div>
@@ -651,7 +711,7 @@
             <div class="footer__wrapper">
                 <div class="footer__left">
                     <a class="footer__logo logo" href="#">
-                        <img class="logo__img" href="#" src="img/logo.svg" alt="логотип" width="224" height="45">
+                        <img class="logo__img" href="#" src="img/logo.svg" alt="логотип" width="224" height="45" loading="lazy">
                     </a>
                     <div class="footer__text">
                         <p>

@@ -1,14 +1,14 @@
-@include("./components/_top.html", {
-    "title" : "Beauty Dent — стоматологическая клиника | Лечение"
+@include('./components/_top.html', {
+'title' : 'Beauty Dent — стоматологическая клиника | Лечение'
 })
 
-@include("./components/_header.html", {
-    "navigation" : "false"
+@include('./components/_header.html', {
+'navigation' : 'false'
 })
 
 @include('./components/_breadcrums.html', {
-    "second" : "Терапия",
-    "href" : '',
+'second' : 'Терапия',
+'href' : '',
 })
 
 <main class="main">
@@ -17,18 +17,19 @@
     </h1>
     <div class="container">
         <div class="main-wrapper">
-            @include("./service-page/_service-filters.html")
+            @include('./service-page/_service-filters.html')
             <div class="main-wrapper__right">
-                @include("./service-page/content/_caries.html")
-                @include("./service-page/content/_pulpits.html")
-                @include("./service-page/content/_extraction.html")
-                @include("./service-page/_prices.html")
-                @include("./service-page/_questions.html")
-                @include("./service-page/_other.html")
+                @include('./service-page/content/_caries.html')
+                @include('./service-page/content/_pulpits.html')
+                @include('./service-page/content/_extraction.html')
+                @include('./service-page/_prices.html')
+                @include('./service-page/_questions.html')
+                @include('./service-page/_other.html')
             </div>
         </div>
     </div>
 </main>
-@include("./components/_contacts.html")
-@include("./components/_footer.html")
-@include("./components/_bottom.html")
+
+@include('./components/_contacts.html')
+@include('./components/_footer.html')
+@include('./components/_bottom.html')

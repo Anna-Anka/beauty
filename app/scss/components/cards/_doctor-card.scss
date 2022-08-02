@@ -1,7 +1,9 @@
 .doctor-card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+    height: 100%;
     background-color: $white;
 
     &__buttons {
@@ -13,7 +15,6 @@
     &__img {
         width: 100%;
         height: 240px;
-        object-fit: cover;
         object-position: top;
     }
 
@@ -22,11 +23,8 @@
         margin-bottom: 10px;
     }
 
-    &__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
+    &__info,
+    &__buttons {
         padding: 0 10px 10px;
     }
 

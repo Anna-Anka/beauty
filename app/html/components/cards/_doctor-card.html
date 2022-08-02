@@ -1,25 +1,27 @@
 <article class="doctor-card">
-    <img class="doctor-card__img" src="img/doctors/@img.jpg" alt="@alt" width="290" height="240" loading="lazy">
-    <div class="doctor-card__info">
-        <h3 class="doctor-card__title">
-            @title
-        </h3>
-        <p class="doctor-card__speciality">
-            @speciality
-        </p>
-        <div class="doctor-card__buttons">
-            <a class="doctor-card__link button button--border" href="#">
-                Подробнее
-                <svg class="button__icon">
-                    <use xlink:href="img/sprite.svg#next-icon"></use>
-                </svg>
-            </a>
-            <button class="button" type="button">
-                Записаться на прием
-                <svg class="button__icon">
-                    <use xlink:href="img/sprite.svg#sign-icon"></use>
-                </svg>
-            </button>
+    <div class="doctor-card__wrapper">
+        <img class="doctor-card__img" src="img/doctors/@img.jpg" alt="@alt" width="290" height="240" loading="lazy">
+        <div class="doctor-card__info">
+            <h3 class="doctor-card__title">
+                @title
+            </h3>
+            <p class="doctor-card__speciality">
+                @speciality
+            </p>
         </div>
+    </div>
+    <div class="doctor-card__buttons">
+        <a class="doctor-card__link button button--border" href="#">
+            Подробнее
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#next-icon"></use>
+            </svg>
+        </a>
+        <button class="button" type="button">
+            Записаться на прием
+            <svg class="button__icon">
+                <use xlink:href="img/sprite.svg#sign-icon"></use>
+            </svg>
+        </button>
     </div>
 </article>

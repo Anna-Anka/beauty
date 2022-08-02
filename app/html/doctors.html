@@ -1,14 +1,14 @@
-@include("./components/_top.html", {
-"title" : "Beauty Dent — стоматологическая клиника | Наши врачи"
+@include('./components/_top.html', {
+'title' : 'Beauty Dent — стоматологическая клиника | Наши врачи'
 })
 
-@include("./components/_header.html", {
-"navigation" : "false"
+@include('./components/_header.html', {
+'navigation' : 'false'
 })
 
 @include('./components/_breadcrums.html', {
-    "second" : "врачи",
-    "href" : '',
+    'second' : 'врачи',
+    'href' : '',
 })
 
 <main class="main">
@@ -17,11 +17,11 @@
     </h1>
     <div class="container">
         <div class="main-wrapper">
-            @include("./doctors-page/_doctors-filters.html")
-            @include("./doctors-page/_doctors.html")
+            @include('./doctors-page/_doctors-filters.html')
+            @include('./doctors-page/_doctors.html')
         </div>
     </div>
 </main>
-@include("./components/_contacts.html")
-@include("./components/_footer.html")
-@include("./components/_bottom.html")
+@include('./components/_contacts.html')
+@include('./components/_footer.html')
+@include('./components/_bottom.html')

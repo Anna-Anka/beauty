@@ -23,7 +23,12 @@
         width: 100%;
         max-width: 227px;
         margin-right: 10px;
-        padding-left: 50px;
+        padding: 0 27px 0 50px;
+
+        &::after,
+        &::before {
+            position: absolute;
+        }
 
         &::before {
             position: absolute;
@@ -43,19 +48,28 @@
             border-radius: 50%;
             content: "M";
         }
+
+        &::after {
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 98%;
+            background-color: $blue-100;
+            content: "";
+        }
     }
 
     &__name {
         margin-bottom: 13px;
         font-weight: $fw-500;
         font-style: normal;
+        display: inline-block;
     }
 
     &__text {
-        position: relative;
-        max-width: 500px;
+        max-width: 480px;
         height: 230px;
-        padding-left: 10px;
+        padding-right: 10px;
         overflow-y: auto;
 
         &::-webkit-scrollbar {
@@ -71,15 +85,6 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-        }
-
-        &::before {
-            position: absolute;
-            left: 0;
-            width: 2px;
-            height: 100%;
-            background-color: $blue-100;
-            content: "";
         }
     }
 

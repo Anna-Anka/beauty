@@ -167,6 +167,24 @@
         }
     }
 
+    .slick-disabled {
+        background-color: rgba($blue-100, 0.7);
+        cursor: initial;
+
+        &:focus,
+        &:active {
+            box-shadow: none;
+        }
+
+        &:hover {
+            background-color: rgba($blue-100, 0.7);
+
+            .contacts-tabs__icon {
+                fill: $white;
+            }
+        }
+    }
+
     &__icon {
         width: 20px;
         height: 25px;
